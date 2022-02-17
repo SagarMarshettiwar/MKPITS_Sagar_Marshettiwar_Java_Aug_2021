@@ -1,0 +1,35 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 22 Jan, 2022, 12:13:32 PM
+    Author     : SAGAR
+*/
+
+body {
+    background-image: url("baground.jpg");
+    width: 100%;
+    height:100%;
+    background-size: 100%;
+}
+.main{
+    position: absolute;
+    top:30%;
+    left:40%;
+    background: #b9bbbe;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px 0px #000;
+}
+.main{
+    box-sizing: content-box;  
+    width: 300px;
+    height: 300px;
+}
+.button input{
+    float:right;
+    background-color:#80bdff ;
+    border-radius: 10px;
+}
