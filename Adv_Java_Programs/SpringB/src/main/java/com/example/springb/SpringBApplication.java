@@ -1,0 +1,15 @@
+package com.example.springb;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
+
+@SpringBootApplication
+@ComponentScan(basePackages = "com.example.springb.model")
+public class SpringBApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(SpringBApplication.class, args);
+    }
+
+}
