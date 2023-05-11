@@ -7,9 +7,9 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class LCTest {
 	public static void main(String args[]) {
 		AbstractApplicationContext context= new ClassPathXmlApplicationContext("com/springcore/lifecycle/LCConfig.xml");
+		context.registerShutdownHook();
 		Samosa s1=(Samosa)context.getBean("samosa");
 		System.out.println(s1);
-		context.registerShutdownHook();
 		System.out.println("==============================================================");
 		Pepsi p1=(Pepsi)context.getBean("pepsi");
 		System.out.println(p1);
