@@ -1,0 +1,75 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    signingConfigs {
+        debug {
+            storeFile file('D:\\OM\\OrcodeGenerator\\mBankJKS.jks')
+            storePassword 'tssipl'
+            keyAlias 'tssipl'
+            keyPassword 'tssipl'
+        }
+    }
+    namespace 'com.example.orcodegenerator'
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.example.orcodegenerator"
+        minSdk 24
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        buildConfigField "String", "private_key" ,'"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"'
+        buildConfigField "String", "public_key" ,'"MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEA1W3EH6B8Zc7gIiNZSBUX GwX59Da/tqC9X6qxFiGVF92Awjg8QVyHT7kK1g1QQ5ArZHVMLNBZhbaE0Z5KZtAy kDChO5aZrzBCbXpVmKXrAGIiZH8Ncz4pIVFcTZbKGUr4iisSMbIefd9NT0wN5I1m kvwbIGh3UOjysiC2AUd8yp5QC+Qb9q9aUpvPU2wG9rWx2Gtz3H2gdUFud8UlZq1M o/uCwcwwPi/kDP8HG1DBLTJDbktkEFq9tQSFIUZcFjDlsCujBxpAj1QQsXxi4RQp FRZPQ6gSnr40U/muErbHYfTSWa/BuguUaTm7r3TxRhnm6d+clwEtrUFVCVDZ6v7r HmneQyKe2fs4E69gcnJXA1boH59tRgQhooJxTzhO0fo2IxblMmKTt79CtuuSb0/6 hBx2E8VhmHyZcUA0b4hJt1r/2ZiC7d4O+ZQllcs/TJO3ywFYFiKBnUyXB2BKvjJ3 rCE6tT5AavE5P0j4cvtGy30EuHVEGQzEHS/jI0qr1aSoaqQZZogf8vPCtubnmkB4 CUbETRGJJw3NwSUvxCTcONLSnT15OR44qcIDmp2m6tlWICfQxMkY+uTrur1fGZxs bmN4GVgjUe7VYI41v3YC3qe86wGlsGLy+qalR62VXZFtvCR6jdAJdhmgKD5mBD1C J+mMA/2otuMLsSlj6el6z4ECAwEAAQ=="'
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+
+        debug {
+            minifyEnabled false
+            debuggable true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+    flavorDimensions "content"
+    productFlavors {
+        trustmbank {
+            applicationId "com.trustbank"
+            applicationIdSuffix ".trustmbank"
+            versionName "1.0.6"
+            versionCode 19
+            resValue "string", "app_name", "Trust Mbank"
+        }
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.8.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    implementation 'com.google.zxing:core:3.4.1'
+
+
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+
+    implementation 'com.journeyapps:zxing-android-embedded:4.1.0'
+    implementation 'com.google.android.gms:play-services-vision:20.1.3'
+    implementation 'com.google.android.gms:play-services-auth:19.0.0'
+    implementation 'com.google.android.gms:play-services-auth-api-phone:17.5.0'
+}

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/coordinatorLayoutId"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="316dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/group2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="50dp"
+
+                android:layout_marginHorizontal="40dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/bt_ScanQR"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Login"
+                    android:background="@drawable/rounded_corner"
+                    android:textColor="@color/white"
+
+
+                    android:src="@drawable/group3"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginHorizontal="40dp"
+
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/bt_Registration"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:hint="Register"
+                    android:textColor="@color/white"
+                    android:background="@drawable/rounded_corner"
+
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginHorizontal="40dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/bt_deregister"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:hint="Deregister"
+                    android:background="@drawable/rounded_corner"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
