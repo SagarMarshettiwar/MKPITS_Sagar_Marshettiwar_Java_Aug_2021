@@ -225,14 +225,14 @@ public class Elevator{
                }     
        }
        public void scaleImageup(){
-        ImageIcon uparrow=new ImageIcon("E:/img1.png");
+        ImageIcon uparrow=new ImageIcon("D:/img1.png");
         Image img=uparrow.getImage();
         Image scale=img.getScaledInstance(l4.getWidth(), l4.getHeight(), Image.SCALE_DEFAULT);
         ImageIcon scaledIcon=new ImageIcon(scale);
         l4.setIcon(scaledIcon);
    }    
    public void scaleImagedown(){
-        ImageIcon downarrow=new ImageIcon("E:/img2.png");
+        ImageIcon downarrow=new ImageIcon("D:/img2.png");
         Image img1=downarrow.getImage();
         Image scale1=img1.getScaledInstance(l4.getWidth(), l4.getHeight(), Image.SCALE_DEFAULT);
         ImageIcon scaledIcon1=new ImageIcon(scale1);
