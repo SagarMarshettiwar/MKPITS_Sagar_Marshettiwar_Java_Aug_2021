@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registeration_form">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Register"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:textColor="@color/black">
+            </TextView>
+        </LinearLayout>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioGroup">
+
+            <RadioButton
+                android:id="@+id/radioMale"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="  Male"
+                android:layout_marginTop="10dp"
+                android:checked="false"
+                android:textSize="20dp" />
+
+            <RadioButton
+                android:id="@+id/radioFemale"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="   Female"
+                android:layout_marginTop="20dp"
+                android:checked="false"
+
+                android:textSize="20dp" />
+        </RadioGroup>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp">
+
+            <EditText
+                android:id="@+id/etName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="8dp"
+                android:hint="Name"
+                android:inputType="text"
+                android:singleLine="true"
+                android:textSize="20sp"
+                android:typeface="serif" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp">
+
+            <EditText
+                android:id="@+id/etmobno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="8dp"
+                android:hint="Mobile No"
+                android:inputType="number"
+                android:singleLine="true"
+                android:textSize="20sp"
+                android:typeface="serif" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp">
+
+            <EditText
+                android:id="@+id/etdob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="8dp"
+                android:hint="Date of birth"
+                android:inputType="date"
+                android:focusable="false"
+                android:singleLine="true"
+                android:textSize="20sp"
+                android:typeface="serif" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp">
+
+            <EditText
+                android:id="@+id/etvehicleNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="8dp"
+                android:hint="Vehicle No"
+                android:inputType="text"
+                android:singleLine="true"
+                android:textSize="20sp"
+                android:typeface="serif" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp">
+
+            <EditText
+                android:id="@+id/etgroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="8dp"
+                android:hint="Group"
+                android:inputType="text"
+                android:singleLine="true"
+                android:textSize="20sp"
+                android:typeface="serif" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/bt_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:textSize="20sp"
+            android:text="Register">
+        </Button>
+    </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
