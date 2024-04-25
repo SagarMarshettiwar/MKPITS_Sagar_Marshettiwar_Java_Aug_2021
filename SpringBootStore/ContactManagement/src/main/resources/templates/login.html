@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="~{base::layout(~{::section})}">
+<head>
+	<meta charset="UTF-8" />
+	<title>This is my Home page</title>
+</head>
+<body>
+	<section>
+		<div class="container register-container">
+		  <div class="row">
+		    <div class="col-sm-8 offset-md-2 d-flex justify-content-center">
+		    <div class="my-card" style="border-radius: 25px;">
+		    <div class="container text-center" >
+		    <div th:if="${session.umessage}" th:classappend="${session.umessage.type}" class="alert" role="alert">
+  				<p th:text="${session.umessage.Content}"></p>
+  				<th:block th:remove="all"></th:block>
+			</div>
+		     <img style ="width:80px;" th:src="@{/images/registration.png}" alt="Registration Icon">
+		    </div>
+		    <h1 class="text-center">Login Here!!</h1>
+		      <form th:action="@{/pass}" method="post" th:object="${userlogin}">
+		        <div class="form-group">
+				    <label for="emale_fill">Your Username</label>
+				    <input name="email" type="email" class="form-control" id="emale_fill"  aria-describedby="emailHelp" placeholder="enter value" required="required">
+				</div>
+		        <div class="form-group">
+				    <label for="pass_fill">Your Password</label>
+				    <input name="password" type="password" class="form-control" id="pass_fill"  aria-describedby="emailHelp" placeholder="enter value" required="required">
+				</div>
+		        <div class="contaner text-center">
+			        <button type="submit" class="btn btn-outline-primary btn-block btn-lg align-items-center">Submit</button>
+			       	<button type="reset" class="btn btn-outline-warning btn-block btn-lg align-items-center">Reset</button>
+			    </div>
+		      </form>
+		   </div>  	
+		   </div>
+		  </div>
+		 </div>
+	</section>
+</body>
+</html>
