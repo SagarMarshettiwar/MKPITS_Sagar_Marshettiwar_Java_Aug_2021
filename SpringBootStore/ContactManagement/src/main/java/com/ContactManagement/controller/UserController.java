@@ -23,6 +23,8 @@ import jakarta.validation.Valid;
 public class UserController {
 	@Autowired
 	private UserRepository urepo;
+	@Autowired
+	private NormalController normalController;
 	@RequestMapping("/")	
 	public String home(Model model) {
 		model.addAttribute("title","Home - Contact Management");
@@ -56,9 +58,14 @@ public class UserController {
 			if(byEmailAndPassword.isEmpty()) {
 				session.setAttribute("umessage",new Message("Login Failed","alert-danger"));
 				return "login";
+			}else if(byEmailAndPassword.get(0).getRole().equals("ROLE_ADMIN")){
+				normalController.UserDashboard(byEmailAndPassword.get(0).getEmail());
+				model.addAttribute("userlogin",new User());
+				session.setAttribute("umessage",new Message("Successfully ADMIN Login","alert-success"));
+				return "redirect:/user/index";
 			}else {
 				model.addAttribute("userlogin",new User());
-				session.setAttribute("umessage",new Message("Successfully Login","alert-success"));
+				session.setAttribute("umessage",new Message("Successfully  Login","alert-success"));
 			}
 		}catch(Exception e) {
 			e.printStackTrace();
