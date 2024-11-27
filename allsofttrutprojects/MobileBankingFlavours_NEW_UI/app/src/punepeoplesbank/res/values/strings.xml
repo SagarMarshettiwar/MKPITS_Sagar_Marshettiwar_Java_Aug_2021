@@ -1,0 +1,5 @@
+<resources>
+   <!-- <string name="set_server_IP">https://mbanking.ppcbl.in:443</string>    //=====PPC Client Side NEW live-->
+   <!-- <string name="set_server_IP">https://uatmbanking.ppcbl.in</string>-->
+    <string name="set_server_IP">https://202.168.146.67:6080</string>
+</resources>

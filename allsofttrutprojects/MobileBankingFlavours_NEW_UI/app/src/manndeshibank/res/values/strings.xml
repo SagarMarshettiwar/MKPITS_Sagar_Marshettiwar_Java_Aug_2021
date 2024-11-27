@@ -1,0 +1,5 @@
+<resources>
+    <string name="set_server_IP">https://manndeshibank.in:33027</string>   //====Manndeshi UAT(becomes LIVE21OCT2021)==========//
+    <!--    <string name="set_server_IP">https://manndeshibank.in:33030</string>   //====Manndeshi UAT==========//-->
+
+</resources>

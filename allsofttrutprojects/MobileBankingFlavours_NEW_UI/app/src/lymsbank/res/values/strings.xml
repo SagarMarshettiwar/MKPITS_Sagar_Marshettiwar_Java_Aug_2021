@@ -1,0 +1,3 @@
+<resources>
+        <string name="set_server_IP">https://103.81.191.74:8899</string>  <!--UAT-->
+</resources>

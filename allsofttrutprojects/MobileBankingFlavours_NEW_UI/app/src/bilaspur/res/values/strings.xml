@@ -1,0 +1,3 @@
+<resources>
+    <string name="set_server_IP">https://bnsbankbsp.com:4443</string>  <!--- UAT =====>-->
+</resources>

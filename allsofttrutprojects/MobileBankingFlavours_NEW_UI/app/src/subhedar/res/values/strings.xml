@@ -1,0 +1,5 @@
+<resources>
+<!--    <string name="set_server_IP">https://nsnspsm.com:443</string>  &lt;!&ndash;- UAT =====>&ndash;&gt;-->
+<!--    <string name="set_server_IP">https://59.94.33.54:443</string>  &lt;!&ndash;- UAT =====>&ndash;&gt;-->
+    <string name="set_server_IP">https://nsnspsm.com:443</string>  <!--- UAT =====>-->
+</resources>

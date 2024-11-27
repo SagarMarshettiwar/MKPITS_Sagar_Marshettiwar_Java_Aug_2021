@@ -1,0 +1,9 @@
+<resources>
+    <!--    <string name="set_server_IP">https://192.168.0.16:9870 </string>  &lt;!&ndash;- latur UAT =====>&ndash;&gt;-->
+    <!--    <string name="set_server_IP">https://59.95.101.93:9870 </string>  &lt;!&ndash;- latur UAT =====>&ndash;&gt;-->
+    <!--    <string name="set_server_IP">https://115.124.106.30:7071 </string>  &lt;!&ndash;- latur UAT =====>&ndash;&gt;-->
+    <!--    <string name="set_server_IP">https://lucbib.co.in:7071</string>  &lt;!&ndash;- latur UAT =====>&ndash;&gt;-->
+    <!--        <string name="set_server_IP">https://lucbib.co.in</string>  &lt;!&ndash;- live =====>&ndash;&gt;-->
+    <!--        <string name="set_server_IP">https://lucbmb.co.in</string>  &lt;!&ndash;- live =====>&ndash;&gt;-->
+    <string name="set_server_IP">https://lucbib.co.in:8081</string>  <!--- live =====>-->
+</resources>

@@ -1,0 +1,3 @@
+<resources>
+    <string name="set_server_IP">https://mbanking.priyadarshanibank.com:443  </string>  <!--- UAT =====>-->
+</resources>

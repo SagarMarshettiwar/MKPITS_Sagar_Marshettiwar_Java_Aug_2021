@@ -1,0 +1,4 @@
+<resources>
+<!--    <string name="set_server_IP">https://59.95.101.93:7055</string>  &lt;!&ndash;- UAT =====>&ndash;&gt;-->
+    <string name="set_server_IP">https://shikshakbanknagar.in:7089</string>  <!--- LIVE =====>-->
+</resources>

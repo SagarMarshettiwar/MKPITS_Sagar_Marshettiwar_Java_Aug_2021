@@ -1,0 +1,6 @@
+<resources>
+    <string name="set_server_IP">https://1.22.231.73:3008 </string>  UAT =====>
+   <!-- <string name="set_server_IP"> https://mbanking.shramjivipatsanstha.com:443 </string> -live =====>-->
+ <!--   <string name="set_server_IP">https://shramjivipatsanstha.com </string>  - live =====>-->
+
+</resources>

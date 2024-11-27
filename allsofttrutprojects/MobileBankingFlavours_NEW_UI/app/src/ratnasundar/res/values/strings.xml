@@ -1,0 +1,4 @@
+<resources>
+ <!--   <string name="set_server_IP">https://202.38.173.30:42103</string>  &lt;!&ndash;- raUAT =====>&ndash;&gt;-->
+    <string name="set_server_IP">https://ruccsbl.com:7075</string>  <!--- raUAT =====>-->202.38.173.30
+</resources>

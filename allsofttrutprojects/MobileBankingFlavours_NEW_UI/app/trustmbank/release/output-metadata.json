@@ -1,0 +1,20 @@
+{
+  "version": 3,
+  "artifactType": {
+    "type": "APK",
+    "kind": "Directory"
+  },
+  "applicationId": "com.trustbank.trustmbank",
+  "variantName": "trustmbankRelease",
+  "elements": [
+    {
+      "type": "SINGLE",
+      "filters": [],
+      "attributes": [],
+      "versionCode": 32,
+      "versionName": "1.0.32",
+      "outputFile": "app-trustmbank-release.apk"
+    }
+  ],
+  "elementType": "File"
+}

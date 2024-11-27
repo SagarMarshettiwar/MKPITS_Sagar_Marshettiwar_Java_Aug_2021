@@ -1,0 +1,750 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/coordinatorLayoutId"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:filterTouchesWhenObscured="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <include
+        layout="@layout/bbps_custom_bar" />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_margin="5dp"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_bill_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    card_view:cardCornerRadius="3dp"
+                    card_view:cardElevation="3dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:id="@+id/ivAppLogo"
+                            android:layout_width="match_parent"
+                            android:layout_height="90dp"
+                            android:contentDescription="@string/txt_mob_banking"
+                            android:gravity="center"
+                            android:src="@drawable/ic_launcher" />
+
+                        <TextView
+                            android:id="@+id/bank_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:gravity="center"
+                            android:text="@string/app_name"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="e-Receipt"
+                            android:layout_marginVertical="5dp"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_16sp"
+                            android:typeface="serif" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="3dp"
+                            android:background="@color/black"
+                            ></LinearLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/bbps_pay_success">
+                        </ImageView>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                        <LinearLayout
+                            android:id="@+id/transaction_ref_id"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.9"
+                                android:text="BBPS Ref Id"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_14sp"
+                                android:typeface="serif" />
+                            <TextView
+                                android:id="@+id/txt_trans_ref_id"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.5"
+                                android:textColor="?attr/textColour"
+                                android:textSize="@dimen/text_14sp"
+                                android:textStyle="bold"
+                                android:typeface="serif"
+                                android:textAlignment="textEnd"/>
+                        </LinearLayout>
+
+                        <!--<LinearLayout
+                            android:id="@+id/payment_ref_id"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.6"
+                                android:text="Payment Ref Id"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_14sp"
+                                android:typeface="serif" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.9"
+                                android:gravity="center"
+                                android:text="@string/txt_colon"
+                                android:textSize="@dimen/text_14sp"
+                                android:typeface="serif" />
+                            <TextView
+                                android:id="@+id/txt_payment_ref_id"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.5"
+                                android:textColor="?attr/textColour"
+                                android:textSize="@dimen/text_14sp"
+                                android:textStyle="bold"
+                                android:typeface="serif" />
+                        </LinearLayout>-->
+
+                        <LinearLayout
+                            android:id="@+id/customer_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.9"
+                                android:text="Customer Name"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_14sp"
+                                android:typeface="serif" />
+                            <TextView
+                                android:id="@+id/txt_customer_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.5"
+                                android:textColor="?attr/textColour"
+                                android:textSize="@dimen/text_14sp"
+                                android:textStyle="bold"
+                                android:typeface="serif"
+                                android:textAlignment="textEnd"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/customer_mobile_no"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.9"
+                                android:text="Mobile No"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_14sp"
+                                android:typeface="serif" />
+                            <TextView
+                                android:id="@+id/txt_cust_mobile_no"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.5"
+                                android:textColor="?attr/textColour"
+                                android:textSize="@dimen/text_14sp"
+                                android:textStyle="bold"
+                                android:typeface="serif"
+                                android:textAlignment="textEnd"/>
+                        </LinearLayout>
+                        <!--<LinearLayout
+                            android:id="@+id/consumer_number"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.6"
+                                android:text="Consumer Number"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_14sp"
+                                android:typeface="serif" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.9"
+                                android:gravity="center"
+                                android:text="@string/txt_colon"
+                                android:textSize="@dimen/text_14sp"
+                                android:typeface="serif" />
+                            <TextView
+                                android:id="@+id/txt_consumer_number"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.5"
+                                android:textColor="?attr/textColour"
+                                android:textSize="@dimen/text_14sp"
+                                android:textStyle="bold"
+                                android:typeface="serif" />
+                        </LinearLayout>-->
+                        <!--<LinearLayout
+                            android:id="@+id/agent_id"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.6"
+                                android:text="Agent Id"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_14sp"
+                                android:typeface="serif" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.9"
+                                android:gravity="center"
+                                android:text="@string/txt_colon"
+                                android:textSize="@dimen/text_14sp"
+                                android:typeface="serif" />
+                            <TextView
+                                android:id="@+id/txt_agent_id"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.5"
+                                android:textColor="?attr/textColour"
+                                android:textSize="@dimen/text_14sp"
+                                android:textStyle="bold"
+                                android:typeface="serif" />
+                        </LinearLayout>-->
+                        <LinearLayout
+                            android:id="@+id/biller_category"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.9"
+                                android:text="Biller Category"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_14sp"
+                                android:typeface="serif" />
+                            <TextView
+                                android:id="@+id/txt_biller_category"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.5"
+                                android:textColor="?attr/textColour"
+                                android:textSize="@dimen/text_14sp"
+                                android:textStyle="bold"
+                                android:typeface="serif"
+                                android:textAlignment="textEnd"/>
+                        </LinearLayout>
+                        <!--<LinearLayout
+                            android:id="@+id/billerId"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.6"
+                                android:text="Biller Id"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_14sp"
+                                android:typeface="serif" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.9"
+                                android:gravity="center"
+                                android:text="@string/txt_colon"
+                                android:textSize="@dimen/text_14sp"
+                                android:typeface="serif" />
+                            <TextView
+                                android:id="@+id/txt_billerId"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.5"
+                                android:textColor="?attr/textColour"
+                                android:textSize="@dimen/text_14sp"
+                                android:textStyle="bold"
+                                android:typeface="serif" />
+                        </LinearLayout>-->
+                        <LinearLayout
+                            android:id="@+id/biller_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.9"
+                                android:text="Biller Name"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_14sp"
+                                android:typeface="serif" />
+                            <TextView
+                                android:id="@+id/txt_biller_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.5"
+                                android:textColor="?attr/textColour"
+                                android:textSize="@dimen/text_14sp"
+                                android:textStyle="bold"
+                                android:typeface="serif"
+                                android:textAlignment="textEnd"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/bill_number"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.9"
+                                android:text="Bill Number"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_14sp"
+                                android:typeface="serif" />
+                            <TextView
+                                android:id="@+id/txt_bill_number"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.5"
+                                android:textColor="?attr/textColour"
+                                android:textSize="@dimen/text_14sp"
+                                android:textStyle="bold"
+                                android:typeface="serif"
+                                android:textAlignment="textEnd"/>
+                        </LinearLayout>
+                        <!--<LinearLayout
+                            android:id="@+id/bill_period"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.6"
+                                android:text="Bill Period"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_14sp"
+                                android:typeface="serif" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.9"
+                                android:gravity="center"
+                                android:text="@string/txt_colon"
+                                android:textSize="@dimen/text_14sp"
+                                android:typeface="serif" />
+                            <TextView
+                                android:id="@+id/txt_bill_period"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.5"
+                                android:textColor="?attr/textColour"
+                                android:textSize="@dimen/text_14sp"
+                                android:textStyle="bold"
+                                android:typeface="serif" />
+                        </LinearLayout>-->
+                        <!--<LinearLayout
+                            android:id="@+id/bill_date"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.6"
+                                android:text="Bill Date"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_14sp"
+                                android:typeface="serif" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.9"
+                                android:gravity="center"
+                                android:text="@string/txt_colon"
+                                android:textSize="@dimen/text_14sp"
+                                android:typeface="serif" />
+                            <TextView
+                                android:id="@+id/txt_bill_date"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.5"
+                                android:textColor="?attr/textColour"
+                                android:textSize="@dimen/text_14sp"
+                                android:textStyle="bold"
+                                android:typeface="serif" />
+                        </LinearLayout>-->
+                        <!--<LinearLayout
+                            android:id="@+id/bill_due_date"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.6"
+                                android:text="Bill Due Date"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_14sp"
+                                android:typeface="serif" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.9"
+                                android:gravity="center"
+                                android:text="@string/txt_colon"
+                                android:textSize="@dimen/text_14sp"
+                                android:typeface="serif" />
+                            <TextView
+                                android:id="@+id/txt_bill_due_date"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.5"
+                                android:textColor="?attr/textColour"
+                                android:textSize="@dimen/text_14sp"
+                                android:textStyle="bold"
+                                android:typeface="serif" />
+                        </LinearLayout>-->
+                        <LinearLayout
+                            android:id="@+id/bill_amount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.9"
+                                android:text="Bill Amount"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_14sp"
+                                android:typeface="serif" />
+
+                            <TextView
+                                android:id="@+id/txt_bill_amount"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.5"
+                                android:textColor="?attr/textColour"
+                                android:textSize="@dimen/text_14sp"
+                                android:textStyle="bold"
+                                android:typeface="serif"
+                                android:textAlignment="textEnd"/>
+                        </LinearLayout>
+                        <!--<LinearLayout
+                            android:id="@+id/payment_channel"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.6"
+                                android:text="Payment Channel"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_14sp"
+                                android:typeface="serif" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.9"
+                                android:gravity="center"
+                                android:text="@string/txt_colon"
+                                android:textSize="@dimen/text_14sp"
+                                android:typeface="serif" />
+                            <TextView
+                                android:id="@+id/txt_payment_channel"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.5"
+                                android:textColor="?attr/textColour"
+                                android:textSize="@dimen/text_14sp"
+                                android:textStyle="bold"
+                                android:typeface="serif" />
+                        </LinearLayout>-->
+                        <LinearLayout
+                            android:id="@+id/payment_mode"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.9"
+                                android:text="Payment Mode"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_14sp"
+                                android:typeface="serif" />
+                            <TextView
+                                android:id="@+id/txt_payment_mode"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.5"
+                                android:textColor="?attr/textColour"
+                                android:textSize="@dimen/text_14sp"
+                                android:textStyle="bold"
+                                android:typeface="serif"
+                                android:textAlignment="textEnd"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/payment_status"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.9"
+                                android:text="Payment Status"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_14sp"
+                                android:typeface="serif" />
+
+                            <TextView
+                                android:id="@+id/txt_payment_status"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.5"
+                                android:textColor="?attr/textColour"
+                                android:textSize="@dimen/text_14sp"
+                                android:textStyle="bold"
+                                android:typeface="serif"
+                                android:textAlignment="textEnd"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/conv_fees"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.9"
+                                android:text="Conv fees"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_14sp"
+                                android:typeface="serif" />
+
+                            <TextView
+                                android:id="@+id/txt_conv_fees"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.5"
+                                android:textColor="?attr/textColour"
+                                android:textSize="@dimen/text_14sp"
+                                android:textStyle="bold"
+                                android:typeface="serif"
+                                android:textAlignment="textEnd"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/total_bill_amount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.9"
+                                android:text="Total Bill Amount"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_14sp"
+                                android:typeface="serif" />
+
+                            <TextView
+                                android:id="@+id/txt_total_bill_amount"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.5"
+                                android:textColor="?attr/textColour"
+                                android:textSize="@dimen/text_14sp"
+                                android:textStyle="bold"
+                                android:typeface="serif"
+                                android:textAlignment="textEnd"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/bill_pay_date_time"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.9"
+                                android:text="Bill Pay Date Time"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_14sp"
+                                android:typeface="serif" />
+
+                            <TextView
+                                android:id="@+id/txt_bill_pay_date_time"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.5"
+                                android:textColor="?attr/textColour"
+                                android:textSize="@dimen/text_14sp"
+                                android:textStyle="bold"
+                                android:typeface="serif"
+                                android:textAlignment="textEnd"/>
+                        </LinearLayout>
+                            </LinearLayout>
+                        </RelativeLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="3dp"
+                            android:layout_marginTop="8dp"
+                            android:background="@color/black"
+                            ></LinearLayout>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="20dp"
+                                android:drawableLeft="@drawable/ic_email_black_24dp"
+                                android:drawablePadding="8dp"
+                                android:drawableStart="@drawable/ic_email_black_24dp"
+                                android:text="@string/txt_email_addr"
+                                android:textColor="?attr/textColorPrimary"
+                                android:textSize="@dimen/text_16sp"
+                                android:textStyle="bold"
+                                android:typeface="serif" />
+
+                            <TextView
+                                android:id="@+id/txtEmailAddrId"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="30dp"
+                                android:layout_marginTop="5dp"
+                                android:textSize="@dimen/text_16sp"
+                                android:textColor="?attr/colorGreenFent"
+                                android:typeface="serif" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="15dp"
+                                android:drawableLeft="@drawable/ic_call_black_24dp"
+                                android:drawablePadding="8dp"
+                                android:drawableStart="@drawable/ic_call_black_24dp"
+                                android:text="@string/txt_contact_num"
+                                android:textColor="?attr/textColorPrimary"
+                                android:textSize="@dimen/text_16sp"
+                                android:textStyle="bold"
+                                android:typeface="serif" />
+
+                            <TextView
+                                android:id="@+id/txtContactNoId"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="30dp"
+                                android:layout_marginTop="5dp"
+                                android:textSize="@dimen/text_16sp"
+                                android:textColor="?attr/colorGreenFent"
+                                android:typeface="serif" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <Button
+                    android:id="@+id/btn_save"
+                    style="?android:textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Save"
+                    android:background="?attr/textColorPrimary"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/text_14sp"
+                    android:layout_gravity="center_horizontal"
+                    android:textStyle="bold"
+                    android:textAllCaps="true"
+                    android:typeface="serif" />
+
+                <Button
+                    android:id="@+id/btn_share"
+                    style="?android:textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Share"
+                    android:background="?attr/textColorPrimary"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/text_14sp"
+                    android:layout_gravity="center_horizontal"
+                    android:textStyle="bold"
+                    android:textAllCaps="true"
+                    android:typeface="serif" />
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

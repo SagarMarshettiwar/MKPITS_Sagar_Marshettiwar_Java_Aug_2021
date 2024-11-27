@@ -1,0 +1,4 @@
+<resources>
+        <string name="set_server_IP">https://palusbank.co.in:7444</string>  <!--- UAT =====>-->
+<!--    <string name="set_server_IP">https://palusbank.co.in:9015</string>  &lt;!&ndash;- LIVE =====>&ndash;&gt;-->
+</resources>

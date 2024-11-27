@@ -1,0 +1,7 @@
+    <resources>
+
+   <!-- <string name="set_server_IP">https://45.117.73.194:1148</string> -->  <!--//====UAT Parijta side==========//-->
+<!--    <string name="set_server_IP">https://ps-nm.com:1149</string>   &lt;!&ndash;//====UAT Parijtat side==========//&ndash;&gt;-->
+    <string name="set_server_IP">https://ps-nm.com:1148</string>   <!--//====Live Parijtat side==========//-->
+
+  </resources>

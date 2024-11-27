@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "artifactType": {
+    "type": "APK",
+    "kind": "Directory"
+  },
+  "applicationId": "com.trustbank.smritibank",
+  "variantName": "smritibankRelease",
+  "elements": [
+    {
+      "type": "SINGLE",
+      "filters": [],
+      "properties": [],
+      "versionCode": 8,
+      "versionName": "1.0.7",
+      "enabled": true,
+      "outputFile": "app-smritibank-release.apk"
+    }
+  ]
+}

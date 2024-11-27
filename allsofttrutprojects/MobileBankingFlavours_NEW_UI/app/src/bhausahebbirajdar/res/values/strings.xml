@@ -1,0 +1,5 @@
+<resources>
+    <!--    <string name="set_server_IP">https://mbanking.bbucb.com:7071</string>  &lt;!&ndash;- UAT =====>&ndash;&gt;-->
+    <!--    <string name="set_server_IP">https://115.124.96.113:7073</string>  &lt;!&ndash;- UAT =====>&ndash;&gt;-->
+    <string name="set_server_IP">https://mbanking.bbucb.com:7071</string>  <!--- LIVE =====>-->
+</resources>

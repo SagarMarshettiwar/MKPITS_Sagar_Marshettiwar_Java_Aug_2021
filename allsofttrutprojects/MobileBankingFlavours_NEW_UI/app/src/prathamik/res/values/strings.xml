@@ -1,0 +1,4 @@
+<resources>
+<!--    <string name="set_server_IP">https://103.19.138.52:7878</string>  &lt;!&ndash;- UAT =====>&ndash;&gt;-->
+    <string name="set_server_IP">https://tpssbl.com:7878</string>  <!--- UAT =====>-->
+</resources>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/coordinatorLayout"
+    tools:context=".activity.BBPSTransactionHistoryFinacusActivity"
+    android:filterTouchesWhenObscured="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <include
+        layout="@layout/bbps_custom_bar" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:id="@+id/et_transaction_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Transaction ID"
+                android:maxLines="1"
+                android:padding="7dp"
+                android:singleLine="true"
+                android:typeface="serif" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:id="@+id/et_biller_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Biller ID"
+                android:maxLines="1"
+                android:padding="7dp"
+                android:singleLine="true"
+                android:typeface="serif" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:paddingLeft="1dp"
+                android:paddingRight="1dp"
+                android:text="@string/txt_from_date"
+                android:textSize="@dimen/text_16sp"
+                android:typeface="serif" />
+
+            <TextView
+                android:id="@+id/txt_FromDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edit_text_border"
+                android:drawableEnd="@drawable/ic_arrow_drop_down_black_24dp"
+                android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+                android:paddingLeft="18dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:hint="dd/MM/yyyy"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_14sp"
+                android:typeface="serif" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:paddingLeft="1dp"
+                android:paddingRight="1dp"
+                android:text="@string/txt_to_date"
+                android:textSize="@dimen/text_16sp"
+                android:typeface="serif" />
+
+
+            <TextView
+                android:id="@+id/txt_ToDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edit_text_border"
+                android:drawableEnd="@drawable/ic_arrow_drop_down_black_24dp"
+                android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+                android:paddingLeft="18dp"
+                android:paddingTop="10dp"
+                android:paddingRight="3dp"
+                android:paddingBottom="10dp"
+                android:hint="dd/MM/yyyy"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_14sp"
+                android:typeface="serif" />
+
+            <Button
+                android:id="@+id/btn_view"
+                style="?android:textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="left"
+                android:layout_marginTop="40dp"
+                android:layout_weight="1"
+                android:background="?attr/textColorPrimary"
+                android:text="VIEW"
+                android:textAllCaps="true"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/text_14sp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+    </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
