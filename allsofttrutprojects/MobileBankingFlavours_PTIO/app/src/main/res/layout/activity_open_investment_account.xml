@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/coordinatorLayout"
+    tools:context=".activity.OpenSavingsAccountActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/custom_toolbar_include"
+            layout="@layout/custom_toolbar" />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/hint_Enter_name"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_15sp">
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/et_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:typeface="serif" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Investment Date"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_15sp">
+                    </TextView>
+                    <TextView
+                        android:id="@+id/tv_investmentdate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableRight="@drawable/dateicon"
+                        android:hint="@string/dd_MMM_yyyy"
+                        android:textColor="@color/black"
+                        android:background="@drawable/edit_text_border"
+                        android:layout_margin="3dp"
+                        android:paddingLeft="3dp"
+                        android:layout_weight="1">
+                    </TextView>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/msg_enter_email"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_15sp">
+                    </TextView>
+                    <EditText
+                        android:id="@+id/et_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:typeface="serif" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/IdentificationType"
+                        android:textSize="@dimen/text_16sp"
+                        android:textColor="@color/black"
+                        android:typeface="serif" />
+                    <Spinner
+                        android:id="@+id/Identification_spi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/spinner_border"
+                        android:padding="10dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/IdentificationNumber"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_15sp">
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/et_identificationno"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:typeface="serif" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/txt_address"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_15sp">
+                    </TextView>
+                    <EditText
+                        android:id="@+id/et_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:singleLine="false"
+                        android:typeface="serif" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/SelectProduct"
+                        android:textSize="@dimen/text_16sp"
+                        android:textColor="@color/black"
+                        android:typeface="serif" />
+                    <Spinner
+                        android:id="@+id/product_spi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/spinner_border"
+                        android:padding="10dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/SelectBranch"
+                        android:textSize="@dimen/text_16sp"
+                        android:textColor="@color/black"
+                        android:typeface="serif" />
+                    <Spinner
+                        android:id="@+id/branch_spi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/spinner_border"
+                        android:padding="10dp" />
+                </LinearLayout>
+                <Button
+                    android:id="@+id/btn_submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/submit"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/press_buttons"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/text_15sp"/>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

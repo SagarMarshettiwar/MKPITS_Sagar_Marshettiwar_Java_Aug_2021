@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.trustbank">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CONNECTIVITY_CHANGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+    <uses-permission android:name="com.trustbank.sadhnambank.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" android:maxSdkVersion="32" />
+
+
+    <application
+        android:name=".util.MBank"
+        android:allowBackup="false"
+        android:debuggable="false"
+        android:exported="false"
+        android:filterTouchesWhenObscured="true"
+        android:fullBackupContent="false"
+        android:icon="${appIcon}"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:resizeableActivity="false"
+        android:roundIcon="${appIcon}"
+        android:supportsRtl="true"
+        android:theme="@style/AppThemeBlue"
+        android:usesCleartextTraffic="true"
+        android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
+        tools:ignore="AllowBackup,GoogleAppIndexingWarning,HardcodedDebugMode"
+        tools:replace="android:allowBackup"
+        tools:targetApi="q">
+        <activity
+            android:name=".activity.InvestmentClosureActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity
+            android:name=".activity.CreditRepaymentActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name=".activity.InvestmentCertificateActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.DisplayAmortizationChartActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CreditSimulatorActivity"
+            android:exported="false"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name=".activity.InvestmentAccountActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.SavingsAccountActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.FingurePrintActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.FeedbackActivity"
+            android:label="@string/Feedback"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SelfTransferToAccountActivity"
+            android:label="SelfTransferToAccountActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SecurityCenterActivity"
+            android:label="@string/SecurityCenter"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PersonalProfileActivity"
+            android:label="@string/PersonalProfile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ProfileSettingsActivity"
+            android:label="@string/ProfileSettings"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.TransactionSuccessActivity"
+            android:label="@string/SelfAccountTransfer"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.IntraBankTransferActivity"
+            android:label="@string/IntraBankTransfer"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.OpenLoanAccountActivity"
+            android:label="@string/OpenInvestmentAccount"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.OpenInvestmentAccountActivity"
+            android:label="@string/OpenInvestmentAccount"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.OpenSavingsAccountActivity"
+            android:label="@string/OpenSavingsAccount"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AccountOverviewActivity"
+            android:label="@string/AccountOverview"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.InvestmentSimulatorActivity"
+            android:label="@string/InvestmentSimulator"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CatalogShowActivity"
+            android:label="@string/Catalogue"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SaveCatalogueActivity"
+            android:label="@string/SavingsCatalogue"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CreditCatalogueActivity"
+            android:label="@string/CreditCatalogue"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.InvestmentCatalogueActivity"
+            android:label="@string/InvestmentCataligue"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SuccessSplashActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ScheduleVisitActivity"
+            android:label="@string/ScheduleVisit"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name=".activity.InvestmentMenus"
+            android:label="@string/Investment"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.BorrowMenu"
+            android:label="@string/Borrow"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.TransactionMenu"
+            android:label="@string/Transaction"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SaveMenu"
+            android:label="@string/Save"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.VisitUsMenu"
+            android:label="@string/VisitUs"
+            android:noHistory="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.TransactionLimitSubmitActivity"
+            android:label="@string/lbl_activity_transaction_limit"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.TransactionLimitActivity"
+            android:label="@string/lbl_activity_transaction_limit"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ResetTPinActivity"
+            android:label="@string/txt_reset_tpin"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity
+            android:name=".activity.ChangePINSActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name=".activity.TPinActivateActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name=".activity.SplashScreenActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- android:name=".activity.SplashScreenActivity" -->
+        <activity
+            android:name=".activity.WelcomeScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.FrmServer"
+            android:label="@string/lbl_set_server"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.VerifyMobileNumber"
+            android:label="@string/lbl_verify_mobile_no"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ActivateProfileInfo"
+            android:label="@string/lbl_activate_profile_info"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PinActivation"
+            android:label="@string/lbl_activate_mpin"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.LockActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MenuActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AccountsActivity"
+            android:label="@string/lbl_accounts"
+            android:noHistory="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AccountDetailsActivity"
+            android:label="@string/lbl_acc_details"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.LocateAtmsActivity"
+            android:label="@string/lbl_locate_atm"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ContactUsActivity"
+            android:label="@string/lbl_contact_us"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.LocateAgencyActivity"
+            android:label="@string/lbl_agencies"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name=".activity.ManageBeneficiaryActivity"
+            android:clearTaskOnLaunch="true"
+            android:label="@string/lbl_manage_beneficiary"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name=".activity.BeneficiaryTypeListActivity"
+            android:label="@string/lbl_types_beneficiary"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name=".activity.OtpVerificationActivity"
+            android:label="@string/lbl_fund_transfer"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name=".activity.AboutUsActivity"
+            android:label="@string/lbl_about_us"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".maps.MapsActivity"
+            android:label="@string/lbl_activity_maps"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.Theme.AppCompat" />
+        <activity
+            android:name=".activity.FrmAccountStatement"
+            android:label="@string/lbl_activity_account_statement"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name=".activity.FrmAccountStatementDetails"
+            android:label="@string/lbl_activity_account_statement"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name=".activity.RegisterClientId"
+            android:label="@string/txt_register_another_client"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="${google_maps_key}" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <receiver
+            android:name=".receiver.MySMSBroadcastReceiver"
+            android:exported="true"
+            android:permission="com.google.android.gms.auth.api.phone.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.gms.auth.api.phone.SMS_RETRIEVED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".receiver.NetworkChangeReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

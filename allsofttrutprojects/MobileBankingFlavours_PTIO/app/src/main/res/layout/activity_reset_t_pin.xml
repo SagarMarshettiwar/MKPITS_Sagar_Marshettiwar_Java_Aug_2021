@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayoutPin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/custom_toolbar_include"
+            layout="@layout/custom_toolbar" />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/custom_toolbar_include"
+            android:layout_gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="30dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hint_security_code"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="2dp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_15sp">
+                </TextView>
+                <EditText
+                    android:id="@+id/etSecurityTpin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapCharacters"
+                    android:hint="@string/hint_security_code"
+                    android:maxLines="1"
+                    android:padding="7dp"
+                    android:maxLength="@integer/security_code_lenght"
+                    android:singleLine="true"
+                    android:typeface="serif"/>
+
+                <TextView
+                    android:id="@+id/textSecurityHintId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_14sp"
+                    android:typeface="serif" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hint_new_tpin"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="2dp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_15sp">
+                </TextView>
+                <EditText
+                    android:id="@+id/etnewPinId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_new_tpin"
+                    android:inputType="numberPassword"
+                    android:maxLength="4"
+                    android:maxLines="1"
+                    android:padding="7dp"
+                    android:singleLine="true"
+                    android:typeface="serif" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hint_confirm_tpin"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="2dp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_15sp">
+                </TextView>
+                <EditText
+                    android:id="@+id/etConfrimPINId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_confirm_tpin"
+                    android:inputType="numberPassword"
+                    android:maxLength="4"
+                    android:maxLines="1"
+                    android:padding="7dp"
+                    android:singleLine="true"
+                    android:typeface="serif"  />
+
+                <Button
+                    android:id="@+id/btnActivationDone"
+                    style="?android:textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/press_buttons"
+                    android:text="@string/btn_next"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"
+                    android:typeface="serif" />
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+    </RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,808 @@
+<resources>
+    <string name="Nocerti">No se encontró ningún certificado</string>
+    <string name="Tpinch">TPin cambió correctamente.</string>
+    <string name="IntraBank1">Intrabanco</string>
+    <string name="feedsugest">Sugiera cualquier cosa que podamos mejorar esto.</string>
+    <string name="logoout">¿Estás seguro de que quieres cerrar sesión?</string>
+    <string name="Cancle">Cancelar</string>
+    <string name="AppointmentScheduled">Cita programada</string>
+    <string name="Chequebook">Talonario de cheques</string>
+    <string name="Passbook">Libreta de depósitos</string>
+    <string name="EmailVerified">Correo electrónico verificado!</string>
+    <string name="EntervalidEmailaddress">Introduzca una dirección de correo electrónico válida.</string>
+    <string name="Mynameis">Mi nombre es</string>
+
+
+    <string name="appointment">Gracias por reservar una cita </string>
+    <string name="WithPTIOat">Con PTIO en </string>
+    <string name="ConAppointment">Por favor CONFIRME su cita , </string>
+    <string name="CANCELTocancel">CANCELAR Para cancelarla o llámanos .</string>
+    <string name="Confirm">Confirmar</string>
+
+    <string name="ThankYou">Gracias por enviar la solicitud de cierre de inversión para la cuenta número: </string>
+    <string name="ThankYou1">Gracias por enviar detalles para la apertura de una cuenta de inversión </string>
+    <string name="ThankYou2">Gracias por enviar detalles para abrir una cuenta de ahorro</string>
+    <string name="toremove">¿Estás seguro de que quieres eliminar?</string>
+    <string name="Validate">Validar</string>
+    <string name="seconds">segundos</string>
+    <string name="YourAccountNo">Su número de cuenta </string>
+    <string name="debitedDallar"> se debita por $. </string>
+    <string name="CreditedtoAccountNo"> Acreditado a la cuenta no </string>
+    <string name="TxnRefNo"> Número de referencia de Txn. </string>
+    <string name="TransactionSuccessful">Transacción exitosa</string>
+    <string name="Beneficiaryissuccessfullyaddedas">El beneficiario se agregó exitosamente como</string>
+    <string name="Itwillbeactivatedafter">Se activará después </string>
+    <string name="Minutes"> Minutos. </string>
+    <string name="SessionExpired"> ¡Sesión expirada!</string>
+    <string name="ResetTPinSuccessfully"> Restablecer TPin con éxito</string>
+    <string name="PinSuccessfullyActivated"> Pin activado con éxito.</string>
+    <string name="YourCreditAmountTransfer"> Transferencia del monto de su crédito </string>
+    <string name="successfullydone">  hecho exitosamente ! </string>
+    <string name="ImagenotSelected">  Imagen no seleccionada </string>
+    <string name="Name1">Nombre : </string>
+    <string name="BranchName1">Nombre de agencia : </string>
+    <string name="AccountNumber1">Número de cuenta : </string>
+    <string name="IFSCCode1">Código IFSC:</string>
+    <string name="AccountTitle1">Titulo de cuenta : </string>
+    <string name="CustomerId1">Identificación del cliente : </string>
+    <string name="FromDate1">Partir de la fecha : </string>
+    <string name="ToDate1">Hasta la fecha : </string>
+    <string name="City1">Ciudad : </string>
+    <string name="State1">Estado : </string>
+    <string name="Address1">DIRECCIÓN : </string>
+    <string name="Spousename1">Nombre del cónyuge : </string>
+    <string name="Mother1">Madre : </string>
+    <string name="Father1">Del padre : </string>
+    <string name="Selectben">Seleccionar Beneficiario</string>
+    <string name="DownloadedSuccessfully">Descargado exitosamente!!!</string>
+    <string name="otpincorrect">Otp es incorrecto, ingrese el Otp correcto e inténtelo nuevamente.</string>
+    <string name="Failedotp">OTP fallida recuperada</string>
+    <string name="FingerPrintActivated">Huella digital activado</string>
+    <string name="TPinSuccessfullyGenerated">TPin generado correctamente. </string>
+    <string name="PerDay">Por día: </string>
+    <string name="NoOfTxnPerDay">No. De Txn Por Día: </string>
+    <string name="PerTxn">Por transmisión: </string>
+    <string name="TransactionLimitPerDay">Límite de transacciones por día. </string>
+    <string name="LimitPerTransaction">Límite por transacción. </string>
+    <string name="NoOfTransactionPerDay">Número de transacciones por día. </string>
+    <string name="PleaseenterValue">Por favor ingrese Valor</string>
+    <string name="Please9digit">Por favor ingrese el número de móvil de 9 dígitos.</string>
+    <string name="MobileNumberSuccessfullyVerified">Número de móvil verificado correctamente.</string>
+    <string name="ApplicationVersion">Versión de la aplicación</string>
+    <string name="Please_enter_valid_email_id">Por favor ingrese una identificación de correo electrónico válida</string>
+    <string name="Entered_Otp_is_invalidplease_enter_correct_Otp">El Otp ingresado no es válido, ingrese el Otp correcto</string>
+    <string name="UserSuccessfullyRegistered">Usuario registrado exitosamente. </string>
+    <string name="MPinChangedSuccessfully">MPin cambiado correctamente. </string>
+    <string name="EnterInstallmentAmount">Ingrese el monto de la cuota</string>
+    <string name="Pleaseselectdates">Por favor seleccione fechas</string>
+    <string name="Pleaseselectfromdate">Por favor seleccione desde fecha</string>
+    <string name="Pleaseselecttodate">Por favor seleccione hasta la fecha</string>
+    <string name="Fromdatecannotbegreaterthantodate">La fecha desde no puede ser mayor que la fecha. </string>
+    <string name="FiledoesnotSupport">El archivo no es compatible. Instale el visor de PDF.</string>
+    <string name="FiledoesnotSupportexcel">El archivo no es compatible. Instale Excel Viewer.</string>
+    <string name="LoadingAccountStatement">Cargando detalles del estado de cuenta....</string>
+    <string name="AccountStatement">Estado de cuenta</string>
+    <string name="Name">Name:- </string>
+    <string name="BranchName">Agency Name:- </string>
+    <string name="AccountTitle">Account Title:- </string>
+    <string name="CustomerId">Customer Id:- </string>
+    <string name="TXNDate">Fecha TXN</string>
+    <string name="ValueDate">Fecha valor</string>
+    <string name="ReferenceNoChequeNo">Número de referencia/No de cheque</string>
+    <string name="TrMode">Modo TR</string>
+    <string name="BranchCode">Código de agencia</string>
+    <string name="Balance">Balance</string>
+    <string name="ClosingBalance">Balance de cierre:-</string>
+    <string name="generatedstatement">Esta es una declaración generada por computadora, no requiere firma.</string>
+    <string name="WentWrong">Algo salió mal. Por favor, vuelva a intentarlo..</string>
+    <string name="Entercustomerid">Ingrese la identificación del cliente</string>
+    <string name="MPinSuccessfullyGenerated">MPin generado correctamente.</string>
+    <string name="Clientidsuccessfullyverified">Identificación del cliente verificada exitosamente.</string>
+
+
+    <string name="CreditAccount">Cuenta de crédito</string>
+    <string name="ErrTenorPeriod">Por favor ingrese tenor</string>
+    <string name="ErrCreditAmount">Por favor ingrese el monto del crédito</string>
+    <string name="ErrInstallmentFrequency">Seleccione el tipo de frecuencia de pago</string>
+    <string name="TenorperiodInMonths">Tenor (Periodo En Meses)</string>
+    <string name="ApplicationDate">Fecha de aplicacion</string>
+    <string name="pleaseentercredityear">Por favor ingrese el año de crédito</string>
+    <string name="pleaseentercreditmonth">Por favor ingrese el mes de crédito</string>
+    <string name="pleaseenterdate">Por favor ingrese la fecha</string>
+    <string name="pleaseenteramount">Por favor ingrese la cantidad</string>
+    <string name="ErrorMessage">Mensaje de error</string>
+    <string name="InvestmentClosure">Cierre de Inversión</string>
+    <string name="InvestmentAccountNumber">Número de cuenta de inversión</string>
+    <string name="CertificationNumber">Numero de Certificación</string>
+    <string name="SelectInvestmentAccount">Seleccionar cuenta de inversión</string>
+    <string name="CreditRepayment">Pago de crédito</string>
+    <string name="SavingAccount">Cuenta de ahorro</string>
+    <string name="DueAmount">Cantidad debida</string>
+    <string name="CertificateNumber">Número certificado</string>
+    <string name="Download">Descargar</string>
+    <string name="Employee">Empleada</string>
+    <string name="Agency">Agencia</string>
+    <string name="TotalReceivable">Total por cobrar</string>
+    <string name="Taxes">Impuestos</string>
+    <string name="Subtotal">Total parcial</string>
+    <string name="Interest">Interés</string>
+    <string name="PaymentFrequency">Frecuencia de pago</string>
+    <string name="CertificateOfInvestment">Certificado de inversión</string>
+    <string name="ExpectedBalance">Saldo esperado</string>
+    <string name="InsuranceAmount">SeguroMonto</string>
+    <string name="InstallmentAmount">Monto de la cuota</string>
+    <string name="PrincipalAmount">Cantidad principal</string>
+    <string name="ExpectedDate">Fecha esperada</string>
+    <string name="InstallmentNumber">Número de cuota</string>
+    <string name="AmortizationChart">Cuadro de amortización</string>
+    <string name="Select">--Seleccionar--</string>
+    <string name="RepaymentDay">Día de pago</string>
+    <string name="InterestCalculationBaseDays">Días base de cálculo de intereses</string>
+    <string name="InsuranceRate">Tarifa de seguro</string>
+    <string name="IsInsuranceApplicable">¿Es aplicable el seguro?</string>
+    <string name="ResetPeriod">Periodo de reinicio</string>
+    <string name="ReAdjustmentPercentage">Porcentaje de reajuste</string>
+    <string name="AdjustmentRate"> Tasa de ajuste</string>
+    <string name="TypeofChart">Tipo de gráfico</string>
+    <string name="FirstDueDate">Primera fecha de vencimiento</string>
+    <string name="GracePeriod">Período de gracia (en días)</string>
+    <string name="InterestCompoundingFrequency">Frecuencia de capitalización de intereses</string>
+    <string name="InstallmentFrequency">Frecuencia de pago</string>
+    <string name="CreditPeriodInYears">Período de crédito (en años)</string>
+    <string name="CreditPeriodInMonths">Período de crédito (en meses)</string>
+    <string name="CreditDate">Fecha de crédito</string>
+    <string name="CreditAmount">Monto de crédito</string>
+
+    <string name="InvestmentsAccount">Cuenta de inversiones</string>
+    <string name="DepositDate">Fecha de depósito</string>
+    <string name="DepositAmount">Cantidad del depósito</string>
+    <string name="SelectAccountNumber">Seleccione el número de cuenta</string>
+    <string name="WrongPasscode">Código de acceso incorrecto</string>
+    <string name="Pleasewaitfor15secorUseMpin">Espere 15 segundos o use Mpin</string>
+    <string name="FingerprintAuthentication">Autenticación de huellas dactilares</string>
+    <string name="PleaseScanYourFinger">Por favor escanea tu dedo</string>
+    <string name="Yourdevicedoesnthavefingerprintsavedpleasecheckyoursecuritysettings">Su dispositivo no tiene huellas digitales guardadas, verifique su configuración de seguridad</string>
+    <string name="Thebiometricsensoriscurrentlyunavailable">El sensor biométrico no está disponible actualmente</string>
+    <string name="Thisdevicedoesnothaveafingerprintsensor">Este dispositivo no tiene sensor de huellas dactilares</string>
+    <string name="Youcanusethefingerprintsensortologin">Puede utilizar el sensor de huellas dactilares para iniciar sesión</string>
+    <string name="UseyourfingerprinttoScan">Utilice su huella digital para escanear </string>
+    <string name="Authentication">Autenticación </string>
+    <string name="txt_Activate_FP">Activar huella digital</string>
+    <string name="FingurePrint">Huella dactilar</string>
+    <string name="PleaseSelectProducttype">Por favor seleccione tipo de producto</string>
+    <string name="SelectCityTaluka">Seleccione ciudad"</string>
+    <string name="InterestRate1">Tasa de interés</string>
+    <string name="InvestmentDuration1">Duración de la inversión</string>
+    <string name="StartingInvestmentValue1">Valor inicial de la inversión</string>
+    <string name="ExpectedReturnRate1">Tasa de retorno esperada</string>
+    <string name="ExpectedInvestmentValue1">Valor de inversión esperado</string>
+    <string name="Yearly">Anual</string>
+    <string name="HalfYearly">Medio año</string>
+    <string name="Quaterly">Trimestralmente</string>
+    <string name="Monthly">Mensual</string>
+    <string name="PleaseSelectCompoundingFrequencyType">Seleccione el tipo de frecuencia compuesta</string>
+    <string name="InvestmentDurationYears">Duración de la inversión (años)</string>
+    <string name="ExpectedReturnRate">Tasa de retorno esperada</string>
+    <string name="InvestmentDurationinDays">Duración de la inversión en días</string>
+    <string name="ExpectedValueonInvestment">Valor esperado de la inversión</string>
+    <string name="InitialInvestment">Inversión inicial</string>
+    <string name="InterestAmount">Cantidad de interés</string>
+
+    <string name="CedulaIdentity">CEDULA DE IDENTIDA</string>
+    <string name="ContactDetails">DETALLES DE CONTACTO</string>
+    <string name="PersonalProfile">Perfil personal</string>
+    <string name="SecurityCenter">Centro de Seguridad</string>
+    <string name="TransactionLimit">Límite de transacciones</string>
+    <string name="Feedback">Comentario</string>
+    <string name="ExistingClient">Cliente existente</string>
+    <string name="NewClient">Nuevo cliente</string>
+    <string name="OpenSavingsAccount">Abrir cuenta de ahorros</string>
+    <string name="IdentificationType">tipo de identificación</string>
+    <string name="SelectProduct">Seleccionar producto</string>
+    <string name="SelectProductType">Seleccionar tipo de producto</string>
+    <string name="SelectIdentificationType">Seleccionar tipo de identificación</string>
+    <string name="SelectMaritalStatus">Seleccione Estado Civil</string>
+    <string name="SelectBranch">Seleccionar Sucursal</string>
+    <string name="SelectBranchType">Seleccionar tipo de sucursal</string>
+    <string name="IdentificationNumber">Número de identificación</string>
+    <string name="MaritalStatus">Estado civil</string>
+    <string name="CreditType">Tipo de crédito</string>
+    <string name="SelectCreditType">Seleccione tipo de crédito</string>
+    <string name="SelectDebtorType">Seleccione el tipo de deudor</string>
+    <string name="DebtorType">Tipo de deudor</string>
+    <string name="lbl_accounts">Cuentas</string>
+    <string name="AccountOverview">Descripción de cuenta</string>
+    <string name="InvestmentSimulator">Simulador de inversiones</string>
+    <string name="SavingsCatalogue">Catálogo de Ahorro</string>
+    <string name="Catalogue">Catálogo</string>
+    <string name="ScheduleVisit">Programar visita</string>
+    <string name="Investment">Inversión</string>
+    <string name="Borrow">Pedir prestado</string>
+    <string name="Transaction">Transacción</string>
+    <string name="Save">Ahorrar</string>
+    <string name="RegisterComplaints">Registrar Quejas</string>
+    <string name="ComplaintManagement">Gestión de reclamaciones</string>
+    <string name="VisitUs">Visítanos</string>
+    <string name="BillPay">Pago de facturas</string>
+    <string name="FetchBill">recuperar factura</string>
+    <string name="BBPSTransactionStatus">Estado de la transacción BBPS</string>
+    <string name="BBPSComplaintList">Lista de quejas de BBPS</string>
+    <string name="lbl_bal_enquiry">Consulta de saldo</string>
+    <string name="lbl_acc_details">detalles de la cuenta</string>
+    <string name="lbl_mini_stmt">Mini declaración</string>
+    <string name="lbl_checkbook_request">Solicitud de chequera</string>
+    <string name="lbl_stmt_request">Solicitud de declaración</string>
+    <string name="lbl_fund_transfer">Transferencia de fondos</string>
+    <string name="lbl_within_bank_transfer">Dentro de Transferencia Bancaria</string>
+    <string name="lbl_self_transfer_acc">Autotransferencia a la cuenta</string>
+    <string name="lbl_cheque_status">Verificar estado</string>
+    <string name="lbl_stop_cheque">Detener solicitud de verificación</string>
+    <string name="lbl_transactions">Actas</string>
+    <string name="lbl_loans">Préstamos</string>
+    <string name="lbl_locate_atm">Localizar cajero automático</string>
+    <string name="lbl_contact_us">Contacta con nosotros</string>
+    <string name="lbl_agencies">Localizar Agencias</string>
+    <string name="lbl_verify_mobile_no">Verificar número de móvil</string>
+    <string name="lbl_set_server">Establecer servidor</string>
+    <string name="lbl_activate_profile_info">Activar información de perfil</string>
+    <string name="lbl_activate_mpin">Activar MPIN</string>
+    <string name="lbl_manage_beneficiary">Administrar beneficiarios</string>
+    <string name="lbl_types_beneficiary">Tipos de beneficiarios</string>
+    <string name="lbl_about_us">Sobre nosotros</string>
+    <string name="lbl_activity_maps">Cajero automático más cercano</string>
+    <string name="lbl_activity_faq">Preguntas frecuentes</string>
+    <string name="lbl_activity_account_statement">Declaración</string>
+    <string name="lbl_activity_settings">Ajustes</string>
+    <string name="lbl_activity_transaction_limit">Límite de transacciones</string>
+    <string name="lbl_activity_block_debit_card">Bloquear tarjeta de débito</string>
+
+    <!--menus names-->
+    <string name="OpenCreditAccount">Solicitud de crédito abierta</string>
+    <string name="Accounts">Cuentas</string>
+    <string name="Investments">Inversiones</string>
+    <string name="Transactions">Actas</string>
+    <string name="ProfileSettings">Configuración de perfil</string>
+    <string name="Home">Hogar</string>
+    <string name="Profile">Perfil</string>
+    <string name="Settings">Ajustes</string>
+    <string name="Logout">Cerrar sesión</string>
+    <string name="AccNo.">Número de cuenta</string>
+    <string name="Narration">Narración</string>
+    <string name="language">idioma</string>
+    <string name="AccountType">Tipo de cuenta</string>
+    <string name="OpeningBalance">Saldo de apertura</string>
+    <string name="AccountDetails">detalles de la cuenta</string>
+    <string name="Statement">Declaración</string>
+    <string name="CreditCatalogue">Catálogo de crédito</string>
+    <string name="CreditEligibility">Elegibilidad crediticia</string>
+    <string name="Eligibility">Elegibilidad</string>
+    <string name="CreditSimulator">Simulador de crédito</string>
+    <string name="SavingsAccount">Cuenta de ahorros</string>
+    <string name="OpenSavingAccount">Abrir cuenta de ahorro</string>
+    <string name="ChequeBookRequest">Solicitar libro de cheques</string>
+    <string name="StopCheque">Detener verificación</string>
+    <string name="ChequeStatus">Verificar estado</string>
+    <string name="DebitCard">Tarjeta de débito</string>
+    <string name="InvestmentAccount">Cuenta de inversión</string>
+    <string name="OpenInvestmentAccount">Abrir cuenta de inversión</string>
+    <string name="InvestmentCertificate">Certificado de Inversión</string>
+    <string name="CloseInvestmentAccount">Cerrar cuenta de inversión</string>
+    <string name="LoanRepayment">Pago de crédito</string>
+    <string name="IntraBankTransfer">Transferencia intrabancaria</string>
+    <string name="SelfAccountTransfer">Transferencia de cuenta propia</string>
+    <string name="InterbankTransfer">Transferencia interbancaria</string>
+    <string name="ManageBeneficiaries">Administrar beneficiarios</string>
+    <string name="Cheque">Controlar</string>
+    <string name="AllDone">¡Todo listo!</string>
+    <string name="BillsPayment">Pago de facturas</string>
+    <string name="LocateAgencies">Localizar Agencias</string>
+    <string name="LocateATM">Localizar cajero automático</string>
+    <string name="Contact">Contacto</string>
+    <string name="SavingCatalogue">Guardar catálogo</string>
+    <string name="CreditCataligue">Catálogo de crédito</string>
+    <string name="InvestmentCataligue">Catálogo de inversiones</string>
+    <string name="InvestmentDuration">Duración de la inversión (en días)</string>
+
+
+    <!--TextView-->
+    <string name="SendFeedback">Enviar comentarios:</string>
+    <string name="AGENCYNAME">NOMBRE DE AGENCIA:</string>
+    <string name="ACNUMBER">Número de cuenta:</string>
+    <string name="NAME">NOMBRE:</string>
+    <string name="yourexperience">tu experiencia?</string>
+    <string name="Sendto">Enviar a(Correo electrónico)</string>
+    <string name="EnteryourName">Introduzca su nombre :</string>
+    <string name="Amount">Cantidad</string>
+    <string name="Fieldbelowareoptional">Los campos a continuación son opcionales</string>
+    <string name="AdvancedSearch">Búsqueda Avanzada</string>?
+    <string name="CedulaID">Cédula de identidad</string>
+    <string name="DateRange365">Rango de fechas 365</string>
+    <string name="ToDate">Hasta la fecha</string>
+    <string name="FromDate">Partir de la fecha</string>
+    <string name="SearchByDateRange">Buscar por rango de fechas</string>
+    <string name="TranslationType">tipo de transacción</string>
+    <string name="SelectAccount">Seleccionar cuenta</string>
+    <string name="ForgotMPIN">¿Olvidaste MPIN?</string>
+    <string name="Show">Espectáculo</string>
+    <string name="LOGIN">inicio de sesión</string>
+    <string name="TermsampConditions">Términos y condiciones</string>
+    <string name="txt_welcome_title">Bienvenida a \n aplicación de banca móvil</string>
+
+    <!--checkbox-->
+    <string name="Ihavereadandagree">He leído y estoy de acuerdo </string>
+    <string name="Debit">Débito</string>
+    <string name="Credit">Crédito</string>
+
+    <!--EditText-->
+    <string name="Remark">Observación</string>
+    <string name="Enterachequeno.orchequerange">Ingrese un número de cheque o un rango de cheque</string>
+    <string name="Maximum">Máxima ($)</string>
+    <string name="Minimum">Mínima ($)</string>
+
+    <!--Button-->
+    <string name="VIEWSTATEMENT">VER DECLARACIÓN</string>
+
+    <!--TextView-->
+    <string name="MinimumBalance">Balance minimo</string>
+    <string name="MaximumBalance">Saldo máximo</string>
+    <string name="ProductName">nombre del producto</string>
+    <string name="AccountNumber">Número de cuenta</string>
+    <string name="AccountBalance">Saldo de la cuenta</string>
+    <string name="txt_colon">:</string>
+    <string name="Investmentprojectiontype">Tipo de proyección de inversión</string>
+    <string name="Compoundingfrequency">frecuencia compuesta</string>
+    <string name="ShowInvestmentProductsDetails">Mostrar detalles de productos de inversión</string>
+    <string name="InvestmentValue">Valor de la inversión</string>
+    <string name="AmountinWords">Cantidad en palabras</string>
+    <string name="InvestmentDate">Fecha de inversión</string>
+    <string name="InterestCalculationMethod">Método de cálculo de intereses</string>
+    <string name="ExtraInterestRate">Tasa de interés adicional</string>
+    <string name="InterestRate">Tasa de interés (anual)</string>
+    <string name="totalIncome">Ingresos totales</string>
+    <string name="interestcalcmethod">Método de cálculo de intereses</string>
+    <string name="TotalInvestmentValue">Valor total de la inversión</string>
+    <string name="txt_activate_profile">Activar perfil de usuario</string>
+    <string name="txt_activate_mpin">Activar MPIN</string>
+    <string name="txt_activate_tpin">Activar TPIN</string>
+    <string name="txt_verify_otp">Verificar OTP</string>
+    <string name="txt_verify_mob_no">Verificar número de móvil</string>
+    <string name="txt_registration">Código de registro</string>
+    <string name="txt_sim_in_slot_one">El número de móvil registrado debe estar en la RANURA SIM UNO</string>
+    <string name="txt_new_to_app">¿Nuevo en la aplicación? Generar pin seguro para autenticación.</string>
+    <string name="txt_forgot_password">Has olvidado tu contraseña</string>
+    <string name="txt_have_pin_login">¿Ya tienes pin? Acceso</string>
+    <string name="txt_acc_no">Número de cuenta</string>
+    <string name="txt_leaf_count">Conteo de hojas</string>
+    <string name="txt_cheque_type">Tipo de cheque</string>
+    <string name="txt_no_of_checkbook">número de chequera</string>
+    <string name="txt_from_date">Partir de la fecha</string>
+    <string name="txt_date">Fecha</string>
+    <string name="CustomerIDXXXX">ID de cliente: XXXX</string>
+    <string name="txt_to_date">Hasta la fecha</string>
+    <string name="txt_Timing">Momento</string>
+    <string name="txt_beneficiary">Beneficiaria</string>
+    <string name="txt_ref_no">Número de referencia</string>
+    <string name="txt_avail_bal">Saldo disponible</string>
+    <string name="txt_select_state">Seleccione Provincia</string>
+    <string name="txt_select_city">Ciudad selecta</string>
+    <string name="txt_search_location_pin">Lista de búsqueda por ubicación, Código Postal</string>
+    <string name="txt_address">Dirección:</string>
+    <string name="txt_head_office_address">Dirección de la oficina central</string>
+    <string name="txt_email_addr">Dirección de correo electrónico</string>
+    <string name="txt_contact_num">Número de contacto</string>
+    <string name="txt_website">Sitio web</string>
+    <string name="txt_resend_otp_msg">Reenviar contraseña de un solo uso se habilitará en 60 segundos</string>
+    <string name="txt_resend_otp">Reenviar contraseña única</string>
+    <string name="txt_welcome_title1">\u25CF  Detalles de cuenta, enviar dinero, consulta de saldo</string>
+    <string name="txt_welcome_title2">\u25CF  Solicitud de libro de cheques, estado de verificación</string>
+    <string name="txt_welcome_title3">\u25CF  Localizar sucursales bancarias y cajeros automáticos cercanos</string>
+    <string name="txt_welcome_title4">\u25CF  Administrar beneficiarios, múltiples cuentas</string>
+    <string name="txt_verify_mob_no_note">Registre su perfil utilizando el número de móvil que ha registrado en su banco.</string>
+    <string name="txt_verify_mob_no_note2">Para confirmar su número de móvil, debemos enviarle un servicio de mensajes cortos desde su teléfono.</string>
+    <string name="txt_std_charges_apply">*Pueden aplicarse cargos estándar</string>
+    <string name="txt_select_sim_sms">Seleccione el módulo de identidad del suscriptor para enviar el servicio de mensajes cortos.</string>
+    <string name="txt_select_default_sim_sms">La tarjeta del módulo de identidad del suscriptor predeterminada se utilizará para enviar el servicio de mensajes cortos</string>
+    <string name="txt_within_bank">Dentro del banco</string>
+    <string name="txt_intra_bank">Para dentro del banco</string>
+    <string name="txt_seach_benf">Lista de búsqueda por nombre de beneficiario</string>
+    <string name="txt_add_ben">Agregar beneficiario</string>
+    <string name="hint_note_secuirty_code">(Sugerencia: El código de seguridad será el año de nacimiento y los últimos 6 dígitos de la identificación del cliente.\nejemplo: Si el año de nacimiento es 1947 y la identificación del cliente es 71123456, entonces su código de seguridad será 1947123456.\n(Nota: Si la ID del cliente tiene 4 dígitos, agregue el número de ceros antes de la ID del cliente para que tenga 6 dígitos.\nejemplo: el año de nacimiento es 1947 y el ID de cliente es 1234, entonces el código de seguridad será 1947001234.))</string>
+    <string name="txt_client_name">Nombre del cliente</string>
+    <string name="txt_name">Nombre</string>
+    <string name="EntertheAmount">introduce la cantidad</string>
+    <string name="toYourBankAccount">a su cuenta bancaria</string>
+    <string name="txt_head_name">nombre del producto</string>
+    <string name="txt_bank_name">Nombre del banco</string>
+    <string name="txt_branch_name">Nombre de agencia</string>
+    <string name="txt_bal">saldo</string>
+    <string name="txt_desc">Descripción</string>
+    <string name="txt_to">A</string>
+    <string name="txt_acc_open_date">Fecha de apertura de la cuenta</string>
+    <string name="txt_dob">Fecha de nacimiento</string>
+    <string name="txt_client_mob_no">Número de teléfono móvil</string>
+    <string name="txt_phone_no">Número de teléfono</string>
+    <string name="txt_addr">dirección</string>
+    <string name="txt_nationality">Nacionalidad</string>
+    <string name="txt_ac_name">Nombre de la cuenta</string>
+    <string name="txt_ac_no">Número de cuenta</string>
+    <string name="txt_mob_no">Número de teléfono móvil</string>
+    <string name="txt_from_account">De la cuenta</string>
+    <string name="txt_select_deposit_type">Seleccione el tipo de depósito</string>
+    <string name="txt_select_interest_calculation_method">Seleccione el método de cálculo de intereses</string>
+    <string name="txt_select_compunding_frequency">Seleccione la frecuencia de composición</string>
+    <string name="txt_select_period_type">Seleccionar tipo de período</string>
+    <string name="txt_linked_account_no">Cuenta vinculada</string>
+    <string name="txt_debited_account">Cuenta debitada</string>
+    <string name="txt_to_account">A la cuenta</string>
+    <string name="txt_to_beneficery">A la beneficiaria</string>
+    <string name="txt_email_id">ID de correo electrónico</string>
+    <string name="txt_emailid">ID de correo electrónico</string>
+    <string name="txt_mob_banking">La banca móvil</string>
+
+    <!--Checkbox-->
+    <string name="check_agree_terms_conditions">Estoy de acuerdo con los términos y condiciones </string>
+    <string name="Simple">Sencilla</string>
+    <string name="Compounding">Compuesto</string>
+
+    <!--EditText-->
+    <string name="hint_mobile_no">Ingrese el número de móvil</string>
+    <string name="dd_MMM_yyyy">dd/MMM/yyyy</string>
+    <string name="hint_Enter_name">Introduzca su nombre</string>
+    <string name="hint_pin">Ingrese su PIN</string>
+    <string name="hint_forgot_login_pin">Olvidé el PIN de inicio de sesión?</string>
+    <string name="hint_otp">Ingrese una contraseña única</string>
+    <string name="hint_mpin">Ingresar MPIN</string>
+    <string name="hint_tpin">Ingresar TPIN</string>
+    <string name="hint_period">Período</string>
+    <string name="hint_enter_interest_rate">Ingrese la tasa de interés</string>
+    <string name="hint_enter_installment_amount">Ingrese el monto de la cuota</string>
+    <string name="hint_account_name">Ingrese el nombre de la cuenta</string>
+    <string name="hint_account_number">Ingrese el número de cuenta</string>
+    <string name="hint_confirm_account_number">Confirmar número de cuenta</string>
+    <string name="hint_amount">Cantidad</string>
+    <string name="hint_remarks">Observación</string>
+    <string name="hint_mobile_number">Número de teléfono móvil</string>
+    <string name="hint_AgencyName">Nombre de agencia</string>
+    <string name="hint_custname">Nombre del cliente</string>
+    <string name="hint_nickname">Introduzca el apodo</string>
+    <string name="hint_mob_no">Ingrese el número de móvil</string>
+    <string name="hint_full_name">Nombre completo</string>
+    <string name="hint_security_code">Código de seguridad</string>
+    <string name="hint_mpin_id">MPIN</string>
+    <string name="hint_tpin_id">TPIN</string>
+    <string name="hint_confirm_mpin">Confirmar MPIN</string>
+    <string name="hint_confirm_tpin">Confirmar TPIN</string>
+    <string name="hint_old_tpin">Vieja TPIN</string>
+    <string name="hint_old_mpin">Vieja MPIN</string>
+    <string name="hint_new_tpin">Nueva TPIN</string>
+    <string name="hint_new_mpin">Nueva MPIN</string>
+
+    <!--Button-->
+    <string name="btn_login">Acceso</string>
+    <string name="btn_benIntra">INTRA</string>
+    <string name="Calculate">Calcular</string>
+    <string name="btn_otp">Obtenga una contraseña única</string>
+    <string name="btn_get_verification_code">Obtener código de verificación</string>
+    <string name="btn_ok">DE ACUERDO</string>
+    <string name="btn_cancel">Cancelar</string>
+    <string name="btn_send">Enviar</string>
+    <string name="btn_branch_locator">Localizador de sucursales </string>
+    <string name="button_next">Próxima</string>
+    <string name="btn_done">Hecho</string>
+    <string name="btn_activate">Activar</string>
+    <string name="btn_send_sms">Enviar servicio de mensajes cortos</string>
+    <string name="btn_continue">Continuar</string>
+    <string name="btn_next">Next</string>
+    <string name="btn_save">Ahorrar</string>
+    <string name="btn_yes">Sí</string>
+    <string name="btn_no">No</string>
+    <string name="btn_reload">Recargar</string>
+    <string name="btn_update_app">Actualizar aplicación</string>
+    <string name="set_server">Establecer servidor</string>
+    <string name="set">conjunto</string>
+    <string name="btn_verify_ben">Verificar beneficiario</string>
+
+    <!--Error Msg-->
+    <string name="device_rooted_message">Tu dispositivo está rooteado!</string>
+    <string name="device_hooked_up_message">La aplicación ha sido enganchada por una aplicación de terceros, \ndesinstale la aplicación de enlace y vuelva a intentarlo!</string>
+    <string name="error_mobile_pin">Ingrese el número de teléfono móvil y el PIN</string>
+    <string name="error_mob_no">Por favor ingrese el número de móvil</string>
+    <string name="error_pin">Por favor introduce el PIN del móvil</string>
+    <string name="error_select_acc_no">Por favor seleccione el número de cuenta</string>
+    <string name="error_select_acc_debit_no">Por favor seleccione el número de cuenta de débito</string>
+    <string name="error_select_to_acc_no">Por favor seleccione Al número de cuenta</string>
+    <string name="error_select_from_to">El número de A/C no debe coincidir con el número de A/C</string>
+    <string name="title_select_acc">Seleccionar cuenta</string>
+    <string name="title_products">Productos</string>
+    <string name="title_select_card">Seleccionar tarjeta</string>
+    <string name="title_select_reason">Seleccionar motivo</string>
+    <string name="error_validate_match_acct">Confirmar que el número de cuenta no coincide</string>
+    <string name="error_select_to_benf">Por favor seleccione beneficiario</string>
+    <string name="error_check_internet">Por favor verifique la conexión a Internet!</string>
+    <string name="error_no_data_found">Datos no encontrados</string>
+    <string name="error_all_fields_mandatory">Todos los campos son obligatorios</string>
+    <string name="error_blank_nickname">El apodo no puede estar en blanco</string>
+    <string name="error_blank_acc_name">El nombre de la cuenta no puede estar en blanco</string>
+    <string name="error_blank_acc_no">El número de cuenta no puede estar en blanco</string>
+    <string name="error_blank_ifsc_code">El código IFSC no puede estar en blanco</string>
+    <string name="error_blank_mobile_no">El número de móvil no puede estar en blanco</string>
+    <string name="error_blank_client_id">El ID del cliente no puede estar en blanco</string>
+    <string name="Client_Id">Identificación del cliente</string>
+    <string name="error_otp">No se puede leer el código de registro</string>
+    <string name="error_blank_fields">Los campos no pueden estar en blanco</string>
+    <string name="error_blank_otp">Se requiere una contraseña de un solo uso para realizar la operación.</string>
+    <string name="error_blank_mpin">Mpin es requerida para realizar transferencia de fondos.</string>
+    <string name="error_blank_tpin">Tpin es requerida para realizar transferencia de fondos.</string>
+    <string name="error_try_again">Algo salió mal. Por favor, vuelva a intentarlo.</string>
+    <string name="missmatch_otp">El código de registro ingresado es incorrecto.</string>
+    <string name="error_security_code">Ingresa el Código de Seguridad</string>
+    <string name="error_confirm_mpin">Ingresar Confirmar MPIN</string>
+    <string name="error_confirm_tpin">Ingresar Confirmar TPIN</string>
+    <string name="error_mismatch_mpin">MPIN y confirmar que MPIN no coincide</string>
+    <string name="error_mpin_lenght">MPIN debe ser de 4 dígitos.</string>
+    <string name="error_tpin_lenght">TPIN debe ser de 4 dígitos.</string>
+    <string name="error_mismatch_tpin">TPIN y confirmar que TPIN no coincide</string>
+
+    /************/
+    <string name="error_session_expire">Sesión expirada!</string>
+    <string name="error_blank_amt">Por favor ingrese la cantidad</string>
+    <string name="error_valid_amt">Por favor ingrese la cantidad válida</string>
+    <string name="error_valid_amt_limit">Por favor ingrese el límite válido</string>
+    <string name="error_enter_ifsc_code">Por favor ingrese el código IFSC</string>
+    <string name="error_invalid_ifsc_code">Ingrese el código IFSC válido</string>
+    <string name="error_enter_ben_acc_no">Por favor ingrese el número de cuenta del beneficiario</string>
+    <string name="error_invalid_ben_acc_no">Ingrese un número de cuenta válido</string>
+    <string name="error_enter_ben_acc_nm">Por favor ingrese el nombre de la cuenta del beneficiario</string>
+    <string name="error_enter_data">Por favor ingresa datos para crear beneficiario</string>
+    <string name="error_benef_remove">Beneficiario eliminado exitosamente</string>
+    <string name="error_benef_not_added">Cuenta de beneficiario no agregada.</string>
+    <string name="error_within_not_avail">No se puede crear un beneficiario para la transferencia de fondos dentro del banco.</string>
+    <string name="error_invalid_cheque_no">Por favor ingrese el número de cheque</string>
+    <string name="error_invalid_cheque_date">Por favor seleccione consultar fecha</string>
+    <string name="error_enter_remark">Por favor introduzca comentario</string>
+    <string name="error_enter_payee_name">Por favor ingrese el nombre del beneficiario</string>
+
+    <string name="error_old_tpin">Introduzca la vieja TPIN</string>
+    <string name="error_old_mpin">Introduzca la vieja MPIN</string>
+    <string name="title_forget_mpin">Olvidó MPIN</string>
+    <string name="title_new_mpin">Nueva MPIN</string>
+
+    <!--Message-->
+    <string name="msg_sure_logout">¿Estás segura de que quieres cerrar sesión?</string>
+    <string name="msg_logout">Cerrar sesión</string>
+    <string name="msg_double_tap">Doble clic para salir</string>
+    <string name="loading_wait">Cargando por favor espere&#8230;</string>
+    <string name="loading_wait_auto_read">Espere por favor.. El código de registro se está leyendo automáticamente.</string>
+    <string name="msg_gps_enable">Tu GPS parece estar deshabilitado, ¿quieres habilitarlo?</string>
+    <string name="msg_enter_name">Ingrese el nombre completo</string>
+    <string name="msg_enter_email">Ingrese la identificación de correo electrónico</string>
+    <string name="TermInmonths">Plazo (En meses)</string>
+    <string name="totalExpenses">Gastos totales</string>
+    <string name="AmountRequested">Monto solicitado</string>
+    <string name="SearchClientID">Buscar ID de cliente</string>
+    <string name="msg_enter_valid_email">Ingrese una identificación de correo electrónico válida</string>
+    <string name="msg_terms_conditions">Se requiere la aceptación de los términos y condiciones.</string>
+    <string name="msg_excel_download">Descarga exitosa del archivo Excel. \n¿Quieres abrirlo?</string>
+    <string name="msg_pdf_download">Descarga exitosa del archivo PDF. \n¿Quieres abrirlo?</string>
+    <string name="msg_excel_not_supported">El archivo no es compatible. Instale Excel Viewer.</string>
+    <string name="msg_pdf_not_supported">El archivo no es compatible. Instale el visor de PDF.</string>
+    <string name="msg_gps_setting">Configuración del sistema de posicionamiento global</string>
+    <string name="msg_resend_otp_enable">Reenviar contraseña única se habilitará en </string>
+    <string name="msg_transaction_success">Transacción exitosa</string>
+    <string name="msg_refresh_token">¿Le gustaría actualizar la sesión existente?</string>
+    <string name="msg_update_app">Nuevas actualizaciones disponibles.</string>
+    <string name="title_activity_main">Actividad principal</string>
+    <string name="navigation_drawer_open">Abrir cajón de navegación</string>
+    <string name="navigation_drawer_close">Cerrar el cajón de navegación</string>
+    <string name="nav_header_title">Estudio Android</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Encabezado de navegación</string>
+    <string name="action_settings">Ajustes</string>
+    <string name="message_sure_wnt_to_logount">¿Estás seguro de que quieres cerrar sesión?</string>
+
+    <string name="please_enter_otp">Por favor ingrese el código de registro</string>
+    <string name="submit">Someter</string>
+    <string name="search_by">Búsqueda por:</string>
+
+    <string name="alert_excel_message">Archivo de Excel descargado exitosamente. \n¿Quieres abrirlo?</string>
+    <string name="alert_pdf_message">Archivo PDF descargado exitosamente. \n¿Quieres abrirlo?</string>
+    <string name="alert_pdf_message_short">Nota: Su extracto de cuenta electrónica está protegido por una contraseña que es el ID del cliente.</string>
+
+    //=========settings=============//
+    <string name="txt_change_mpin">Cambiar MPIN</string>
+    <string name="txt_change_tpin">Cambiar TPIN</string>
+    <string name="txt_reset_tpin">Reiniciar TPIN</string>
+    <string name="setTransactionLimit">Establecer límite de transacciones</string>
+    <string name="txt_transaction_limit">Límite de transacciones</string>
+    <string name="txt_register_another_client">Registrar ID de cliente</string>
+    <string name="txt_debit_card_pin_generate">Generar PIN de tarjeta de débito</string>
+
+    <string name="hint_client_id">Ingrese la identificación del cliente</string>
+
+    <string name="txt_edit">Editar</string>
+    <string name="hint_transaction_limit">Límite de transacciones</string>
+
+
+    <string name="msg_back_button">El botón Atrás no está habilitado. Utilice la navegación en pantalla..</string>
+    <string name="input_type_alphanumeric">ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890</string>
+
+
+    <string name="alert_back_message">¿Quieres cancelar el registro?</string>
+    <string name="alert_back_title">Cancelar registro</string>
+
+
+    <!-- -&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-->
+
+    <!--TextView-->
+    <string name="tv_from_date">Partir de la fecha</string>
+    <string name="tv_To_date">Hasta la fecha</string>
+    <string name="tv_biller_category">Categoría de facturador</string>
+    <string name="tv_coverage">Cobertura</string>
+    <string name="tv_biller_name">Nombre del facturador</string>
+    <string name="tv_biller_id">ID del facturador</string>
+    <string name="tv_consumer_no">Número de consumidor</string>
+    <string name="tv_customer_mob_no">Número de móvil del consumidor</string>
+    <string name="tv_consumer_name">Nombre del consumidor</string>
+    <string name="tv_bill_date">Fecha de pago</string>
+    <string name="tv_payee_mob_no">Número de móvil del beneficiario</string>
+    <string name="tv_mob_no">Número de teléfono móvil</string>
+    <string name="tv_bill_to_be_paid">Seleccione la factura a pagar</string>
+    <string name="tv_payment_mode_select">Seleccione el modo de pago</string>
+    <string name="tv_payment_mode">Modo de pago</string>
+    <string name="tv_amount">Cantidad</string>
+    <string name="tv_category">Categoría</string>
+    <string name="tv_cust_convienience_fees">Tarifas de conveniencia del cliente</string>
+    <string name="tv_total_amount_enter">Ingrese el monto total</string>
+    <string name="tv_type_of_complaint">Tipo de denuncia</string>
+    <string name="tv_complaint_type">Tipo de queja</string>
+    <string name="tv_complaint_reason">Motivo de la queja</string>
+    <string name="tv_total_amount">Cantidad total</string>
+    <string name="tv_transaction_success">Transacción exitosa !!</string>
+    <string name="tv_transaction_amt">cantidad de transacción</string>
+    <string name="tv_charges">Cargos</string>
+    <string name="tv_status">Estado</string>
+    <string name="tv_transaction_id">ID de transacción</string>
+    <string name="tv_customer_id">Identificación del cliente</string>
+    <string name="tv_BBPOU_name">Nombre de BBPOU</string>
+    <string name="tv_transaction_status">estado de la transacción</string>
+    <string name="tv_transaction_datetime">Fecha y hora de la transacción </string>
+    <string name="tv_payment_channel">Canal de pago</string>
+    <string name="tv_complaint_desc">Descripción de la queja</string>
+    <string name="tv_customer_name">Nombre del cliente</string>
+    <string name="tv_from_account">De la cuenta</string>
+
+    <!--EditText-->
+    <string name="et_transaction_id_enter">Ingrese el ID de la transacción</string>
+    <string name="et_biller_name_enter">Ingrese el nombre del facturador</string>
+    <string name="et_biller_id_enter">Ingrese el ID del facturador</string>
+    <string name="et_consumer_no_enter">Ingrese el número de consumidor</string>
+    <string name="et_consumer_name_enter">Ingrese el nombre del consumidor</string>
+    <string name="et_cust_convienience_fees_enter">Ingrese las tarifas de conveniencia del cliente</string>
+    <string name="et_enter_remark">Introducir comentarios</string>
+    <string name="et_mob_no_enter">Ingrese el número de móvil</string>
+    <string name="et_payee_mob_no_enter">Ingrese el número de móvil del beneficiario</string>
+    <string name="et_amount_enter">Ingrese el monto</string>
+    <string name="et_bill_period">Ingrese el período de facturación</string>
+    <string name="et_bill_number">Ingrese el número de factura</string>
+    <string name="et_bill_due_date">Ingrese la fecha de vencimiento de la factura</string>
+    <string name="et_bill_date_enter">Ingrese la fecha de la factura</string>
+    <string name="et_complaint_id">Ingrese el ID de queja</string>
+    <string name="et_complaint_desc">Ingrese la descripción de la queja</string>
+    <string name="et_enter_nickname">Ingrese el apodo</string>
+
+    <string name="google_maps_key">AIzaSyCpgsg7pRAgRHQY27RO1tl4oQUKieyFLWs</string>
+
+
+    <!--Select Spinner Default message-->
+    <string name="sp_select_biller_category">--Seleccione categoría de facturador--</string>
+    <string name="sp_select_coverage">--Seleccione Cobertura--</string>
+    <string name="sp_select_bill_tobe_paid">--Seleccione la factura a pagar--</string>
+    <string name="sp_select_payment_mode">--Seleccione Modo de Pago--</string>
+    <string name="sp_select_typeof_complaint">--Seleccione Tipo de Queja--</string>
+    <string name="sp_select_Projection_Type">--Seleccione el tipo de proyección--</string>
+
+    <!--Error Msg-->
+    <string name="error_biller_name">Por favor ingrese el nombre del facturador </string>
+    <string name="error_consumer_number">Por favor ingrese el número de consumidor </string>
+    <string name="error_consumer_name">Por favor ingrese el nombre del consumidor</string>
+    <string name="error_amount">Por favor ingrese la cantidad</string>
+    <string name="error_bill_date">Por favor ingrese la fecha de la factura</string>
+    <string name="error_bill_period">Por favor ingrese el período de facturación</string>
+    <string name="error_bill_number">Por favor ingrese el número de factura</string>
+    <string name="error_payee_mobile_no">Ingrese el número de teléfono móvil del beneficiario</string>
+    <string name="error_mobile_no">Por favor ingrese el número de móvil</string>
+    <string name="error_valid_mobile_no">Por favor ingrese un número de móvil válido</string>
+    <string name="error_valid_payee_mobile_no">Por favor ingrese un número de teléfono móvil válido del beneficiario</string>
+    <string name="error_payment_mode">Por favor seleccione el modo de pago </string>
+    <string name="error_type_of_complaint">Por favor seleccione el tipo de queja</string>
+    <string name="error_complaint_type">Por favor seleccione el tipo de queja</string>
+    <string name="error_complaint_reason">Por favor seleccione el motivo de la queja</string>
+    <string name="error_complaint_descripton">Por favor ingrese la descripción de la queja</string>
+    <string name="error_cust_convienience_fees_enter">Ingrese la tarifa de conveniencia del cliente</string>
+    <string name="error_total_amount_enter">Por favor ingrese el monto total</string>
+    <string name="error_biller_cate">Seleccione la categoría del facturador </string>
+    <string name="error_coverage">Por favor seleccione cobertura </string>
+    <string name="error_coverage2">Por favor seleccione cobertura </string>
+    <string name="error_biller_id">Por favor ingrese el ID del facturador </string>
+    <string name="error_complaint_id">Por favor ingrese el ID de queja </string>
+    <string name="error_transaction_id">Por favor ingrese el ID de la transacción</string>
+    <string name="error_bill_tobe_paid">Por favor seleccione Factura a pagar </string>
+    <string name="error_enter_nickname">Por favor ingrese el apodo</string>
+    <string name="error_select_account">Por favor seleccione cuenta</string>
+
+
+    <!--BUTTON-->
+    <string name="btn_view_details">VER DETALLES</string>
+    <string name="btn_search">BUSCAR</string>
+    <string name="btn_pay">PAGAR</string>
+    <string name="btn_view">VISTA</string>
+    <string name="btn_back">ATRÁS</string>
+    <string name="btn_proceed">PROCEDER</string>
+    <string name="btn_email">CORREO ELECTRÓNICO</string>
+    <string name="btn_reg_complaint">REGISTRAR QUEJA</string>
+    <string name="btn_print">IMPRIMIR</string>
+    <string name="btn_register">REGISTRO</string>
+    <string name="btn_enter_cheque_no">Ingrese el número de cheque</string>
+
+    <string name="btn_verify">VERIFICAR</string>
+
+
+    <!--Activity names-->
+    <string name="search_biller">Buscar facturador</string>
+    <string name="pay_bill">Pagar la factura</string>
+    <string name="fetch_bill">recuperar factura</string>
+    <string name="non_pay_bill">Factura impaga</string>
+    <string name="confirm_payment_detail">Confirmar detalles de pago</string>
+    <string name="transaction_receipt">Recibo de la transacción</string>
+    <string name="search_transaction">Buscar transacción</string>
+    <string name="transaction_list">Lista de transacciones</string>
+    <string name="complaint_register">Registro de quejas de transacciones</string>
+    <string name="transaction_comp_detail">Detalles de queja de transacción</string>
+    <string name="service_comp_register">Registro de quejas de servicio</string>
+    <string name="Complaint_tracking">Seguimiento de quejas</string>
+    <string name="share_query">Comparte tu consulta e Ideas con nosotras!</string>
+    <!-- Strings related to MainActivity-->
+    <!-- Strings related to barcode scanner -->
+    <string name="ok">DE ACUERDO</string>
+    <string name="permission_camera_rationale">Se necesita acceso a la cámara para la detección.</string>
+    <string name="no_camera_permission">Esta aplicación no se puede ejecutar porque no tiene el permiso de la cámara.  La aplicación ahora saldrá.</string>
+    <string name="low_storage_error">Las dependencias del detector de rostros no se pueden descargar debido al bajo almacenamiento del dispositivo</string>
+    <string name="error_reference_id">Por favor ingrese el número de referencia</string>
+    <string name="error_description_id">Por favor ingrese comentario</string>
+    <string name="error_complaint_type_id">Por favor seleccione el tipo de queja</string>
+
+    <string name="msg_sure_collect_req">Are you sure you want to request money of rs  </string>
+
+    <string name="msg_create_barcode_req">¿Estás segura de que quieres generar QR?  </string>
+    <string name="msg_confirm_collect_req">Confirmar</string>
+    <string name="txt_withdrawl_amount">Cantidad de retiro</string>
+    <string name="txt_expiry_date">Fecha de caducidad</string>
+    <string name="txt_installment_amount">Monto de la cuota</string>
+    <string name="txt_deposit_period">Período de depósito</string>
+    <string name="txt_maturity_amount">Monto de vencimiento</string>
+    <string name="txt_maturity_date">Fecha de vencimiento</string>
+    <string name="txt_scheme_name">Nombre del esquema</string>
+    <string name="txt_interest_rate">Tasa de interés</string>
+    <string name="txt_interest_rate_leval">Nivel de tasa de interés</string>
+    <string name="txt_account_status">estado de la cuenta</string>
+    <string name="large_text">"El material es la metáfora.\n\n"</string>
+    <string name="IntraBank">Intrabanco</string>
+
+    <string-array name="Schedule_products_valie">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+    <string-array name="Compounding_Frequency_Types">
+        <item>0</item>
+        <item>12</item>
+        <item>4</item>
+        <item>2</item>
+        <item>1</item>
+
+    </string-array>
+</resources>

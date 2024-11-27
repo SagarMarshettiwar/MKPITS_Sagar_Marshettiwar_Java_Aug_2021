@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/upper_curved_rectangle"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="30dp"
+        android:layout_marginHorizontal="10dp"
+        android:elevation="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:text="@string/ProductName"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_14sp"
+                    android:typeface="serif"
+                    android:layout_marginStart="5dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.9"
+                    android:gravity="center"
+                    android:text="@string/txt_colon"
+                    android:textSize="@dimen/text_14sp"
+                    android:typeface="serif" />
+
+
+                <TextView
+                    android:id="@+id/product_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:textColor="@color/colorGray"
+                    android:textSize="@dimen/text_14sp"
+                    android:typeface="serif" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:singleLine="true"
+                    android:text="@string/AccountNumber"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_14sp"
+                    android:typeface="serif"
+                    android:layout_marginStart="5dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.9"
+                    android:gravity="center"
+                    android:text="@string/txt_colon"
+                    android:textSize="@dimen/text_14sp"
+                    android:typeface="serif" />
+
+
+                <TextView
+                    android:id="@+id/acc_num"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:textColor="@color/colorGray"
+                    android:textSize="@dimen/text_14sp"
+                    android:typeface="serif" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="6dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:singleLine="true"
+                    android:text="@string/AccountBalance"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_14sp"
+                    android:typeface="serif"
+                    android:layout_marginStart="5dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.9"
+                    android:gravity="center"
+                    android:text="@string/txt_colon"
+                    android:textSize="@dimen/text_14sp"
+                    android:typeface="serif" />
+
+
+                <TextView
+                    android:id="@+id/acc_bal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:textColor="@color/colorGray"
+                    android:textSize="@dimen/text_14sp"
+                    android:typeface="serif" />
+            </LinearLayout>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:orientation="horizontal"
+                        android:layout_marginVertical="4dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="2dp"
+                                android:layout_weight="0.6"
+                                android:gravity="center"
+                                android:text="@string/MinimumBalance"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_14sp"
+                                android:typeface="serif" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_gravity="center">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.5"
+                                    android:text="$ "
+                                    android:textColor="@color/colorGray"
+                                    android:textSize="@dimen/text_14sp"
+                                    android:typeface="serif" />
+
+                                <TextView
+                                    android:id="@+id/min_bal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.5"
+                                    android:text="hello"
+                                    android:textColor="@color/colorGray"
+                                    android:textSize="@dimen/text_14sp"
+                                    android:typeface="serif" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/red_circle"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_margin="3dp"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="2dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@color/colorGrey">
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.6"
+                                android:paddingLeft="2dp"
+                                android:text="@string/MaximumBalance"
+                                android:gravity="center"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_14sp"
+                                android:typeface="serif" />
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_gravity="center">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.5"
+                                    android:text="$ "
+                                    android:textColor="@color/colorGray"
+                                    android:textSize="@dimen/text_14sp"
+                                    android:typeface="serif" />
+
+                                <TextView
+                                    android:id="@+id/max_bal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.5"
+                                    android:text="hello"
+                                    android:textColor="@color/colorGray"
+                                    android:textSize="@dimen/text_14sp"
+                                    android:typeface="serif" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/green_circle"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_margin="3dp"/>
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="2dp"
+                        android:text="@string/txt_interest_rate_leval"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_14sp"
+                        android:typeface="serif"
+                        android:textAlignment="center"/>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_slab_level"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_margin="5dp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
