@@ -3,6 +3,7 @@ package com.example.MKApi.Services;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import com.example.MKApi.Dto.RegistrationDto;
@@ -15,7 +16,7 @@ public class RegestrationService {
 	RegestrationRepo repo;
 	
 	public Registration addData(RegistrationDto r){
-		
+		BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
 		Registration registration=new Registration();
 		registration.setFirstName(r.getFirstName());
 		registration.setLastName(r.getLastName());
@@ -26,7 +27,8 @@ public class RegestrationService {
 		registration.setZip(r.getZip());
 		registration.setCountry(r.getCountry());
 		registration.setRole(r.getRole());
-		registration.setPassword(r.getPassword());
+		String encode = passwordEncoder.encode(r.getPassword());
+		registration.setPassword(encode);
 		registration.setApproved(r.isApproved());
 		registration.setAgentid(r.getAgentid());
 		return repo.save(registration);

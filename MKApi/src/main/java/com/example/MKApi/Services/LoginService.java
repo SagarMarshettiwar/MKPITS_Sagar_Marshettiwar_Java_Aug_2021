@@ -4,6 +4,7 @@ import java.util.Random;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -21,12 +22,23 @@ public class LoginService {
 	@Autowired
 	EmailService emailService;
 	
-	
-	public Registration findUser(RegistrationDto r) {
+	public ResponseEntity<String> findUser(RegistrationDto r) {
+		boolean matches=false;
+		BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
 		Registration registration=new Registration();
 		registration.setEmail(r.getEmail());
-		registration.setPassword(r.getPassword());
-		return repo.findByEmailAndPassword(registration.getEmail(),registration.getPassword());
+		Registration byEmail = repo.findByEmail(registration.getEmail());
+		if(byEmail != null) {
+			matches = passwordEncoder.matches(r.getPassword(), byEmail.getPassword());	
+		}else {
+			return ResponseEntity.badRequest().body("Unable to find User");
+		}
+		
+		if(!matches) {
+			return ResponseEntity.badRequest().body("Your Email and Password must be wrong . Login UNSUCCESSFULL2");
+		}else {
+			return ResponseEntity.ok("Login SUCCESSFULL");
+		} 
 	}
 	
     public ResponseEntity<String> sendEmail(@RequestBody RegistrationDto r, HttpSession session ) {
@@ -57,8 +69,11 @@ public class LoginService {
 		String sessionOtp = (String) session.getAttribute("otp");
         if (otp.equals(sessionOtp)) {
         	 System.out.println("valid otp");
+        	 session.removeAttribute("otp");
             return ResponseEntity.ok("OTP verified successfully ");
-        } else {
+        } else if(sessionOtp == null){
+        	return ResponseEntity.ok("OTP Already Verifiied ");
+        }else {
             System.out.println("Invalid otp");
             return ResponseEntity.badRequest().body("Invalid OTP. Please try again.");
         }
@@ -74,9 +89,13 @@ public class LoginService {
 	            return ResponseEntity.badRequest().body("Email is not present in records");
 	        }
 	        
-	        existingRegistration.setPassword(r.getPassword());
-	        repo.save(existingRegistration);
-	        return ResponseEntity.ok("Password Change successfully");
+	        if(r.getPassword().equals(existingRegistration.getPassword())) {
+	        	return ResponseEntity.badRequest().body("Your Change Password should not be match");
+	        }else {
+	        	existingRegistration.setPassword(r.getPassword());
+		        repo.save(existingRegistration);
+		        return ResponseEntity.ok("Password Change successfully");
+	        }
 	        
 	}
 

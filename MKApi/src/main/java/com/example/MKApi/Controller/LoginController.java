@@ -23,8 +23,8 @@ public class LoginController {
 	private LoginService loginService ;
 	
 	@PostMapping("/validateUser")
-	public Registration findrecords(@RequestBody RegistrationDto r) {
-		Registration user = loginService.findUser(r);
+	public ResponseEntity<String> findrecords(@RequestBody RegistrationDto r) {
+		ResponseEntity<String> user = loginService.findUser(r);
 		return user;
 	}
 	

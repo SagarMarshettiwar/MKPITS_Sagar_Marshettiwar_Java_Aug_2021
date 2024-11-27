@@ -21,7 +21,7 @@ public class RegistrationController {
 	private RegestrationService regestrationService;
 	
 	@PostMapping("/addData")
-	public String adddata(@RequestBody RegistrationDto r) {
+	public String adddata(@RequestBody RegistrationDto r) {                 
 		Registration data = regestrationService.addData(r);
 		return "Data Added";
 	}
@@ -31,5 +31,4 @@ public class RegistrationController {
 		List<Registration> data = regestrationService.getData();
 		return data;
 	}
-	
 }
