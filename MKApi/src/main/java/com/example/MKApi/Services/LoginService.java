@@ -41,7 +41,7 @@ public class LoginService {
 		} 
 	}
 	
-    public ResponseEntity<String> sendEmail(@RequestBody RegistrationDto r, HttpSession session ) {
+    public ResponseEntity<String> sendEmail(RegistrationDto r, HttpSession session ) {
         Registration registration = new Registration();
         registration.setEmail(r.getEmail());
    
@@ -80,23 +80,35 @@ public class LoginService {
 	}
 
 	public ResponseEntity<String> changePassword(RegistrationDto r, HttpSession session) {
-		 Registration registration = new Registration();
-	        registration.setEmail(r.getEmail());
+		BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
+		/*
+		 * Registration registration = new Registration();
+		 * registration.setEmail(r.getEmail());
+		 */
 	        String sessionEmail = (String) session.getAttribute("email");
 	        Registration existingRegistration = repo.findByEmail(sessionEmail);
 	        
 	        if (existingRegistration == null) {
 	            return ResponseEntity.badRequest().body("Email is not present in records");
 	        }
+	        boolean matches = passwordEncoder.matches(r.getPassword(), existingRegistration.getPassword());
 	        
-	        if(r.getPassword().equals(existingRegistration.getPassword())) {
+	        if(matches) {
 	        	return ResponseEntity.badRequest().body("Your Change Password should not be match");
 	        }else {
-	        	existingRegistration.setPassword(r.getPassword());
+	        	String encode = passwordEncoder.encode(r.getPassword());
+	        	existingRegistration.setPassword(encode);
 		        repo.save(existingRegistration);
 		        return ResponseEntity.ok("Password Change successfully");
-	        }
+	        }  
 	        
+//	        if(r.getPassword().equals(existingRegistration.getPassword())) {
+//	        	return ResponseEntity.badRequest().body("Your Change Password should not be match");
+//	        }else {
+//	        	existingRegistration.setPassword(r.getPassword());
+//		        repo.save(existingRegistration);
+//		        return ResponseEntity.ok("Password Change successfully");
+//	        }  
 	}
 
 }
