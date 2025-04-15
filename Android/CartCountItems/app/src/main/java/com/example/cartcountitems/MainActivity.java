@@ -34,9 +34,16 @@ public class MainActivity extends AppCompatActivity {
         btn_next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                int total = 0;
+                List<CartModel> list = new ArrayList<>();
                 for (Map.Entry<String, Integer> entry : map.entrySet()){
-
+                    total = total + entry.getValue();
+                    CartModel model =new CartModel();
+                    model.setItemName(entry.getKey());
+                    model.setItemPrice(entry.getValue().toString());
+                    list.add(model);
                 }
+                System.out.println(""+total);
             }
         });
 
