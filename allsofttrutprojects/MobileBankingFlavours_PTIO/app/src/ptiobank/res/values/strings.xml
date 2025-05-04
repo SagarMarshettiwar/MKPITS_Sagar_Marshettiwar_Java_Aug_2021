@@ -1,0 +1,7 @@
+<resources>
+        <!--<string name="set_server_IP">https://192.168.0.5:5554</string> //=====Local====5-->
+         <string name="set_server_IP">https://59.95.101.93:5554</string> //=====Local====5
+        <!--<string name="set_server_IP">https://3.216.21.9:8074</string> //=====public====-->
+        <!--<string name="set_server_IP">https://54.144.84.89:443</string> //=====public====-->
+
+</resources>

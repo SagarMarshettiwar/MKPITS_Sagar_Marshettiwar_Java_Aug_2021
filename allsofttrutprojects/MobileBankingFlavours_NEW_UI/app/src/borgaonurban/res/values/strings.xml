@@ -1,0 +1,4 @@
+<resources>
+   <!-- <string name="set_server_IP">https://brgurb.in:20204 </string>  &lt;!&ndash;- UAT =====>&ndash;&gt;-->
+    <string name="set_server_IP">https://brgurb.in</string>  <!--- UAT =====>-->
+</resources>

@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:id="@+id/coordinatorLayout"
+    tools:context=".activity.InvestmentSimulatorActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/custom_toolbar_include"
+            layout="@layout/custom_toolbar" />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Investmentprojectiontype"
+                        android:textSize="@dimen/text_16sp"
+                        android:textColor="@color/black"
+                        android:typeface="serif" />
+
+                    <Spinner
+                        android:id="@+id/sp_projtype"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/spinner_border"
+                        android:padding="10dp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ll_radiogroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <!--gone-->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/InterestCalculationMethod"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_15sp">
+                    </TextView>
+
+                    <RadioGroup
+                        android:id="@+id/radioGroup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+                        <!--adding a radio button -->
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:layout_weight="1"
+                            android:padding="4dp"
+                            android:text="@string/Simple"
+                            android:textSize="@dimen/text_15sp" />
+
+                        <!--adding a radio button -->
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:layout_weight="1"
+                            android:padding="4dp"
+                            android:text="@string/Compounding"
+                            android:textSize="@dimen/text_15sp" />
+                    </RadioGroup>
+                    <!--<RadioGroup
+                        android:id="@+id/radioGroup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <RadioButton
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:checked="false"
+                                android:text="@string/Simple"
+                                android:textSize="@dimen/text_15sp" />
+
+                            &lt;!&ndash;adding a radio button &ndash;&gt;
+                            <RadioButton
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:checked="false"
+                                android:text="@string/Compounding"
+                                android:textSize="@dimen/text_15sp" />
+                        </LinearLayout>
+                    </RadioGroup>-->
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ll_invstvalue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/InvestmentValue"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_15sp">
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/et_investmentvalue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:maxLines="1"
+                        android:hint="0000000"
+                        android:singleLine="true"
+                        android:typeface="serif" />
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/txt_amountinwords"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/AmountinWords"
+                    android:layout_marginTop="10dp"
+                    android:textSize="@dimen/text_15sp"
+                    android:textColor="@color/greenColor">
+                </TextView>
+                <LinearLayout
+                    android:id="@+id/ll_invstdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/InvestmentDate"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_15sp">
+                    </TextView>
+                    <TextView
+                        android:id="@+id/editTextToDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableRight="@drawable/dateicon"
+                        android:hint="@string/dd_MMM_yyyy"
+                        android:background="@drawable/edit_text_border"
+                        android:layout_margin="3dp"
+                        android:paddingLeft="3dp"
+                        android:layout_weight="1">
+                    </TextView>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ll_idurmon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <!--  gone-->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/InvestmentDuration"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_15sp">
+                    </TextView>
+                    <EditText
+                        android:id="@+id/et_invstduration"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:inputType="number"
+                        android:typeface="serif" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_totalinstvalue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/TotalInvestmentValue"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_15sp">
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/et_totalinvestmentvalue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:typeface="serif"
+                        android:inputType="numberDecimal"/>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/txt_totalamountinwords"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/AmountinWords"
+                    android:layout_marginTop="10dp"
+                    android:textSize="@dimen/text_15sp"
+                    android:textColor="@color/greenColor">
+                </TextView>
+
+                <LinearLayout
+                    android:id="@+id/ll_intrateannual"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/InterestRate"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_15sp">
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/et_interestrate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:hint="000000"
+                        android:singleLine="true"
+                        android:inputType="number|numberDecimal"
+                        android:typeface="serif" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ll_extintrate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ExtraInterestRate"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_15sp">
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/et_extrainterestrate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:typeface="serif" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ll_compfreqsp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Compoundingfrequency"
+                        android:textSize="@dimen/text_16sp"
+                        android:textColor="@color/black"
+                        android:typeface="serif" />
+
+                    <Spinner
+                        android:id="@+id/compfreq_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/spinner_border"
+                        android:padding="10dp" />
+
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/btn_continue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Calculate"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/press_buttons"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/text_15sp"/>
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

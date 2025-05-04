@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+<!--    <bean id="Emp2" class="com.example.springdemo2.Employee2">-->
+<!--        <constructor-arg index="0" value="24"/>                   AutoWiring using constructor -->
+<!--        <constructor-arg index="1" value="Sagar"/>-->
+<!--    </bean>-->
+<!--    <bean id="Aob2" autowire="constructor" class="com.example.springdemo2.Account2">-->
+<!--    </bean>-->
+
+   <!-- <bean id="emp3" class="com.example.springdemo2.Employee3">
+        <property name="id" value="1"></property>
+        <property name="name" value="sagar"></property>     AutoWiring using Setter;
+    </bean>
+    <bean id="Aob3" autowire="byName" class="com.example.springdemo2.Account3">
+
+    </bean>-->
+
+    <bean id="emp" class="com.example.springdemo2.Employee3">
+        <qualifier value="merawala"></qualifier>
+       <property name="id" value="1"></property>
+       <property name="name" value="sagar"></property>     <!--AutoWiring using annotations;-->
+   </bean>
+   <bean id="Aob4" class="com.example.springdemo2.Account3">
+
+   </bean>
+
+    <bean class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor"></bean>
+</beans>

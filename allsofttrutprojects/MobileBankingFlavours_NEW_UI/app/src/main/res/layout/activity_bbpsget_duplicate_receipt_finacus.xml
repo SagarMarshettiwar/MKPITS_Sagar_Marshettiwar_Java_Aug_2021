@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/coordinatorLayoutId"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:filterTouchesWhenObscured="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <include
+        layout="@layout/bbps_custom_bar" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/ll_transc_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="10dp">
+
+                <EditText
+                    android:id="@+id/et_transc_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Transaction ID"
+                    android:maxLines="1"
+                    android:padding="7dp"
+                    android:singleLine="true"
+                    android:typeface="serif" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btn_search"
+                style="?android:textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="20dp"
+                android:text="Search"
+                android:background="?attr/textColorPrimary"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/text_14sp"
+                android:layout_gravity="center_horizontal"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:typeface="serif" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_dup_receipt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/card_background_selector"
+            android:layout_margin="10dp"
+            card_view:cardCornerRadius="8dp"
+            android:elevation="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="5dp">
+
+                <LinearLayout
+                    android:id="@+id/ll_transaction_ref_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:text="Transaction Ref ID"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_14sp"
+                        android:typeface="serif" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.9"
+                        android:gravity="center"
+                        android:text="@string/txt_colon"
+                        android:textSize="@dimen/text_14sp"
+                        android:typeface="serif" />
+
+
+                    <TextView
+                        android:id="@+id/txt_transaction_ref_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:textColor="?attr/textColour"
+                        android:textSize="@dimen/text_14sp"
+                        android:textStyle="bold"
+                        android:typeface="serif" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ll_payment_ref_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:text="Payment Ref ID"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_14sp"
+                        android:typeface="serif" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.9"
+                        android:gravity="center"
+                        android:text="@string/txt_colon"
+                        android:textSize="@dimen/text_14sp"
+                        android:typeface="serif" />
+
+
+                    <TextView
+                        android:id="@+id/txt_payment_ref_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:textColor="?attr/textColour"
+                        android:textSize="@dimen/text_14sp"
+                        android:textStyle="bold"
+                        android:typeface="serif" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ll_transaction_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:text="Transaction ID"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_14sp"
+                        android:typeface="serif" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.9"
+                        android:gravity="center"
+                        android:text="@string/txt_colon"
+                        android:textSize="@dimen/text_14sp"
+                        android:typeface="serif" />
+
+
+                    <TextView
+                        android:id="@+id/txt_transaction_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:textColor="?attr/textColour"
+                        android:textSize="@dimen/text_14sp"
+                        android:textStyle="bold"
+                        android:typeface="serif" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ll_customer_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:text="Custome Name"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_14sp"
+                        android:typeface="serif" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.9"
+                        android:gravity="center"
+                        android:text="@string/txt_colon"
+                        android:textSize="@dimen/text_14sp"
+                        android:typeface="serif" />
+
+
+                    <TextView
+                        android:id="@+id/txt_customer_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:textColor="?attr/textColour"
+                        android:textSize="@dimen/text_14sp"
+                        android:textStyle="bold"
+                        android:typeface="serif" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ll_customer_mobile_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:text="Customer Mobile No"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_14sp"
+                        android:typeface="serif" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.9"
+                        android:gravity="center"
+                        android:text="@string/txt_colon"
+                        android:textSize="@dimen/text_14sp"
+                        android:typeface="serif" />
+
+
+                    <TextView
+                        android:id="@+id/txt_customer_mobile_no"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:textColor="?attr/textColour"
+                        android:textSize="@dimen/text_14sp"
+                        android:textStyle="bold"
+                        android:typeface="serif" />
+                </LinearLayout>
+                <!--<LinearLayout
+                    android:id="@+id/ll_consumer_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:text="Consumer Number"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_14sp"
+                        android:typeface="serif" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.9"
+                        android:gravity="center"
+                        android:text="@string/txt_colon"
+                        android:textSize="@dimen/text_14sp"
+                        android:typeface="serif" />
+
+
+                    <TextView
+                        android:id="@+id/txt_consumer_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:textColor="?attr/textColour"
+                        android:textSize="@dimen/text_14sp"
+                        android:textStyle="bold"
+                        android:typeface="serif" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ll_agent_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:text="Agent ID"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_14sp"
+                        android:typeface="serif" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.9"
+                        android:gravity="center"
+                        android:text="@string/txt_colon"
+                        android:textSize="@dimen/text_14sp"
+                        android:typeface="serif" />
+
+
+                    <TextView
+                        android:id="@+id/txt_agent_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:textColor="?attr/textColour"
+                        android:textSize="@dimen/text_14sp"
+                        android:textStyle="bold"
+                        android:typeface="serif" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ll_biller_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:text="Biller ID"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_14sp"
+                        android:typeface="serif" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.9"
+                        android:gravity="center"
+                        android:text="@string/txt_colon"
+                        android:textSize="@dimen/text_14sp"
+                        android:typeface="serif" />
+
+
+                    <TextView
+                        android:id="@+id/tx_biller_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:textColor="?attr/textColour"
+                        android:textSize="@dimen/text_14sp"
+                        android:textStyle="bold"
+                        android:typeface="serif" />
+                </LinearLayout>-->
+                <LinearLayout
+                    android:id="@+id/ll_biller_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:text="Biller Name"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_14sp"
+                        android:typeface="serif" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.9"
+                        android:gravity="center"
+                        android:text="@string/txt_colon"
+                        android:textSize="@dimen/text_14sp"
+                        android:typeface="serif" />
+
+
+                    <TextView
+                        android:id="@+id/txt_biller_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:textColor="?attr/textColour"
+                        android:textSize="@dimen/text_14sp"
+                        android:textStyle="bold"
+                        android:typeface="serif" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ll_bill_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:text="Bill Number"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_14sp"
+                        android:typeface="serif" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.9"
+                        android:gravity="center"
+                        android:text="@string/txt_colon"
+                        android:textSize="@dimen/text_14sp"
+                        android:typeface="serif" />
+
+
+                    <TextView
+                        android:id="@+id/txt_bill_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:textColor="?attr/textColour"
+                        android:textSize="@dimen/text_14sp"
+                        android:textStyle="bold"
+                        android:typeface="serif" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ll_bill_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:text="Bill Date"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_14sp"
+                        android:typeface="serif" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.9"
+                        android:gravity="center"
+                        android:text="@string/txt_colon"
+                        android:textSize="@dimen/text_14sp"
+                        android:typeface="serif" />
+
+
+                    <TextView
+                        android:id="@+id/txt_bill_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:textColor="?attr/textColour"
+                        android:textSize="@dimen/text_14sp"
+                        android:textStyle="bold"
+                        android:typeface="serif" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/btn_share"
+                style="?android:textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="20dp"
+                android:text="SHARE"
+                android:background="?attr/textColorPrimary"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/text_14sp"
+                android:layout_gravity="center_horizontal"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:typeface="serif" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

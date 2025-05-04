@@ -1,0 +1,4 @@
+<resources>
+    <!--    <string name="set_server_IP">https://117.217.122.106:4123</string>  &lt;!&ndash;- UAT =====>&ndash;&gt;-->
+    <string name="set_server_IP">https://mbinet.ambikamahilabank.org.in:4187</string>   Live =====>
+</resources>

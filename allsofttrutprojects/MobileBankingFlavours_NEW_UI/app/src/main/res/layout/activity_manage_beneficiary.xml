@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:filterTouchesWhenObscured="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/LLparentId"
+            android:padding="3dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/searchBenfId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:background="@drawable/edit_text_border"
+                        android:drawableStart="@drawable/ic_search_black_24dp"
+                        android:drawableLeft="@drawable/ic_search_black_24dp"
+                        android:drawablePadding="5dp"
+                        android:ems="10"
+                        android:hint="@string/txt_seach_benf"
+                        android:inputType="text"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:textSize="@dimen/text_14sp" />
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/receyclerBeneficieryList"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="15dp"
+                        android:scrollbars="vertical" />
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/addBeneficiaryId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="10dp"
+                android:backgroundTint="?attr/textColorPrimary"
+                android:clickable="true"
+                android:src="@drawable/ic_add_black_24dp"
+                app:borderWidth="0dp"
+                app:elevation="8dp"
+                app:fabSize="normal" />
+
+        </RelativeLayout>
+
+        <include layout="@layout/custom_horizontal_recycler_view" />
+    </RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

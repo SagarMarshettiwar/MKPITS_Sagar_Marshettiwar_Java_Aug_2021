@@ -1,0 +1,25 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 34
+
+    defaultConfig {
+        minSdkVersion 26
+        targetSdkVersion 34
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+
+        debug {
+            minifyEnabled false
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+}
+
+//apply from: '../gradle-mvn-push.gradle'

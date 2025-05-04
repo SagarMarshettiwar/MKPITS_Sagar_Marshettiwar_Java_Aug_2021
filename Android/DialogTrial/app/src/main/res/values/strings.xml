@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">DialogTrial</string>
+    <string name="message">doalog open</string>
+    <string name="btn_ok">OK</string>
+</resources>

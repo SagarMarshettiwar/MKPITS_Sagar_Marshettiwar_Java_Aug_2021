@@ -1,0 +1,4 @@
+<resources>
+    <string name="set_server_IP">https://59.97.238.117:1987</string>  <!--UAT-->
+<!--    <string name="set_server_IP">https://m.janatabankajara.com:1993</string>   //====JANATA AJARA LIVE==========//-->
+</resources>

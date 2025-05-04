@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- <string name="set_server_IP">https://103.247.55.146:2120</string>--> <!--== MOTIIII UAT ==-->
+<!--     <string name="set_server_IP">https://motiurbanbank.com:7014</string> &lt;!&ndash;== new domain uat ==&ndash;&gt;-->
+     <string name="set_server_IP">https://motibank.in:8089</string> <!--== new domain uat ==-->
+</resources>

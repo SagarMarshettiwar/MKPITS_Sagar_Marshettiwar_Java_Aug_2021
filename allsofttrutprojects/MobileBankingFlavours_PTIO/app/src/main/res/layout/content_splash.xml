@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutHome"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="false">
+
+    <!--android:scaleType="center"-->
+    <ImageView
+        android:id="@+id/ivAppLogo"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:visibility="gone"
+        android:layout_above="@+id/Welcome_text"
+        android:layout_centerInParent="true"
+        android:contentDescription="@string/txt_mob_banking"
+        android:gravity="center"
+        android:src="@drawable/ptio_appic" />
+
+    <TextView
+        android:id="@+id/Welcome_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="Welcome"
+        android:textColor="@color/black"
+        android:textSize="50sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/text_mb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="1dp"
+        android:visibility="gone"
+        android:gravity="center"
+        android:text="@string/txt_mob_banking"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_30sp"
+        android:textStyle="italic" />
+</RelativeLayout>

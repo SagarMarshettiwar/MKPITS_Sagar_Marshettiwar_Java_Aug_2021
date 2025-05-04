@@ -1,0 +1,602 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    tools:context=".activity.Form15GHActivity">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/ll_custdet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Customer ID"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1.8"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/black" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="2.7"
+                        android:text=":"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/black" />
+                    <TextView
+                        android:id="@+id/tv_custid"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginTop="10dp"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Name"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1.8"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/black" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="2.7"
+                        android:text=":"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/black" />
+                    <TextView
+                        android:id="@+id/tv_custname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="PAN"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1.8"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/black" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="2.7"
+                        android:text=":"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/black" />
+                    <TextView
+                        android:id="@+id/tv_pan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Date Of Birth"
+                        android:layout_weight="1.8"
+                        android:layout_marginTop="10dp"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/black" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="2.7"
+                        android:text=":"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/black" />
+                    <TextView
+                        android:id="@+id/tv_dob"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+                <CheckBox
+                    android:id="@+id/ck_declarationpan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="I Declare the PAN is valid and belongs to me.">
+                </CheckBox>
+                <Button
+                    android:id="@+id/btn_confirm"
+                    style="?android:textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Confirm"
+                    android:background="?attr/textColorPrimary"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/text_14sp"
+                    android:layout_gravity="center_horizontal"
+                    android:textStyle="bold"
+                    android:textAllCaps="true"
+                    android:typeface="serif" />
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_mainExemptionlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Exemption"
+                    android:gravity="center"
+                    android:background="?attr/colorPrimary"
+                    android:layout_marginTop="2dp"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/text_20sp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/exemptiontypeLL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/text_10sp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Exemption Type"
+                    android:layout_marginTop="10dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/black" />
+
+                <Spinner
+                    android:id="@+id/exemptiontypespinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:padding="5dp"
+                    android:background="@drawable/spinner_border"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/Exemption_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/ll_15hg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/text_10sp"
+                    android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Whether assessed to tax under the income-tax Act,1961:"
+                            android:layout_marginTop="10dp"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/black" />
+                        <RadioGroup
+                            android:id="@+id/radioGroupassessed"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:checkedButton="@+id/ck_no"
+                            android:orientation="horizontal">
+
+                        <RadioButton
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:padding="4dp"
+                            android:text="Yes"
+                            android:textSize="20sp" />
+                        <RadioButton
+                            android:id="@+id/ck_no"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:padding="4dp"
+                            android:text="No"
+                            android:textSize="20sp" />
+                        </RadioGroup>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/text_10sp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/tv_radioGroup15H"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Is Form No.15H is filed in p.y."
+                        android:layout_marginTop="10dp"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/black" />
+                    <RadioGroup
+                        android:id="@+id/radioGroup15H"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:checkedButton="@+id/ck_no1"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:padding="4dp"
+                            android:text="Yes"
+                            android:textSize="20sp" />
+                        <RadioButton
+                            android:id="@+id/ck_no1"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:padding="4dp"
+                            android:text="No"
+                            android:textSize="20sp" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="UID"
+                        android:layout_marginTop="10dp"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/tv_uid"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_assessmentyear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/text_10sp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Assessment Year"
+                        android:layout_marginTop="10dp"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/black" />
+
+                    <Spinner
+                        android:id="@+id/assessmentyearspinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:padding="5dp"
+                        android:background="@drawable/spinner_border"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_TotalNo15h"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_TotalNo15h"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Total No. of Form No 15H"
+                        android:layout_marginTop="10dp"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/black" />
+
+                    <EditText
+                        android:id="@+id/et_TotalNo15h"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:inputType="number"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ll_AggregateAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_AggregateAmount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Aggregate Amount of Form No. 15H"
+                        android:layout_marginTop="10dp"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/black" />
+
+                    <EditText
+                        android:id="@+id/et_AggregateAmount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:inputType="number"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_EstimatedTotalIncome"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Estimated Total Income of the P.Y in which income mention in column 15 to be included(5)"
+                        android:layout_marginTop="10dp"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/black" />
+
+                    <EditText
+                        android:id="@+id/et_EstimatedTotalIncome"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:layout_marginTop="10dp"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/letterLL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_TdsRate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="TDS Rate"
+                        android:layout_marginTop="10dp"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/black" />
+
+                    <EditText
+                        android:id="@+id/et_TdsRate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_TdsExemptionRate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="TDS Exemption Limit"
+                        android:layout_marginTop="10dp"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/black" />
+
+                    <EditText
+                        android:id="@+id/et_TdsExemptionRatelimit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_otherincmesource"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Income from other Source"
+                        android:layout_marginTop="10dp"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/black" />
+
+                    <EditText
+                        android:id="@+id/et_otherincmesource"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:inputType="number"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_incomecertificate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Certificate Number"
+                        android:layout_marginTop="10dp"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/black" />
+
+                    <EditText
+                        android:id="@+id/et_incomecertificate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:paddingLeft="1dp"
+                        android:paddingRight="1dp"
+                        android:text="TDS Exempton From Date"
+                        android:textSize="@dimen/text_16sp"
+                        android:typeface="serif"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/tv_TDSExemptonFromDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/edit_text_border"
+                        android:drawableEnd="@drawable/ic_arrow_drop_down_black_24dp"
+                        android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+                        android:paddingLeft="18dp"
+                        android:paddingTop="10dp"
+                        android:hint="Set From Date"
+                        android:paddingBottom="10dp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_14sp"
+                        android:typeface="serif" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:paddingLeft="1dp"
+                        android:paddingRight="1dp"
+                        android:text="TDS Exempton To Date"
+                        android:textSize="@dimen/text_16sp"
+                        android:typeface="serif"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/tv_TDSExemptonToDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/edit_text_border"
+                        android:drawableEnd="@drawable/ic_arrow_drop_down_black_24dp"
+                        android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+                        android:paddingLeft="18dp"
+                        android:paddingTop="10dp"
+                        android:hint="Set To Date"
+                        android:paddingBottom="10dp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_14sp"
+                        android:typeface="serif" />
+                </LinearLayout>
+
+            </LinearLayout>
+                <Button
+                    android:id="@+id/btn_Submit"
+                    style="?android:textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Submit"
+                    android:background="?attr/textColorPrimary"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/text_14sp"
+                    android:layout_gravity="center_horizontal"
+                    android:textStyle="bold"
+                    android:textAllCaps="true"
+                    android:typeface="serif" />
+            </LinearLayout>
+        </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

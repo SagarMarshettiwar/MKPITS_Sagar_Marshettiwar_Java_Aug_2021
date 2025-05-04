@@ -1,0 +1,6 @@
+<resources>
+        <string name="set_server_IP">https://59.95.101.93:8079</string>//=====public==
+        <!--<string name="set_server_IP">https://krishnaparaspar.co.in/krishnaparaspar_nidhi_test/api/web</string>-->
+
+
+</resources>

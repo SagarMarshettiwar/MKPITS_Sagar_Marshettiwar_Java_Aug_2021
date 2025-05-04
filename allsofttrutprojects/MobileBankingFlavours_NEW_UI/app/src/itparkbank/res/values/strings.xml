@@ -1,0 +1,10 @@
+<resources>
+
+
+    <!--<string name="set_server_IP">https://122.252.239.150:3005</string>  &lt;!&ndash; VMUCB Bank Live=====>&ndash;&gt;-->
+   <!-- <string name="set_server_IP">https://mbank.pdccbank.com:4981</string>--> !--- Anuradha live Bank =====>-->
+<!--    <string name="set_server_IP">https://59.95.101.93:8081</string>-->
+<!--    <string name="set_server_IP">https://59.95.101.93:5554</string>-->
+<!--        <string name="set_server_IP">https://192.168.0.5:8073</string>-->
+        <string name="set_server_IP">https://59.95.101.93:8079</string>
+</resources>

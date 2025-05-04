@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8" />
+	<title>Iterator Testing</title>
+</head>
+<body>
+	<h1 th:text="${mylist}"></h1>
+	
+	<li th:each="n,status : ${mylist}">
+			<span th:style="${status.odd} ? 'font-weight:bold' : ''"  th:text="${status.index+1}+' '+${n}"></span>
+	</li>
+</body>
+</html>

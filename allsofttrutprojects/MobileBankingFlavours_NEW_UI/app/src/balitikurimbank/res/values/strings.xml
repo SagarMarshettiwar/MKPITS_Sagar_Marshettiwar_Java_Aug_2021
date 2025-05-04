@@ -1,0 +1,6 @@
+<resources>
+    <!--<string name="set_server_IP">https://182.76.237.218:7575</string>  &lt;!&ndash;- UAT Bank =====>&ndash;&gt;-->
+    <!--<string name="set_server_IP">https://bcbl.in:7575</string>  &lt;!&ndash;- LIVE Bank =====>&ndash;&gt;-->
+<!--    <string name="set_server_IP">https://182.76.237.218:6464</string>-->
+    <string name="set_server_IP">https://36.255.252.228:7575</string>
+</resources>

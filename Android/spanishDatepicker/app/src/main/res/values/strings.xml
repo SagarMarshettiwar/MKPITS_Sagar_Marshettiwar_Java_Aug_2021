@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">spanishDatepicker</string>
+    <string name="main_first_day_of_your_last_period">datepicker</string>
+</resources>

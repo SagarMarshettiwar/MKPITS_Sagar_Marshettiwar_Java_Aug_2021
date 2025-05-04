@@ -1,0 +1,5 @@
+<resources>
+    <!--    <string name="set_server_IP">https://117.248.107.130:4389 </string>  - UAT =====>-->
+    <!--    <string name="set_server_IP">https://117.248.107.130:4491  </string>  &lt;!&ndash;- UAT =====>&ndash;&gt;-->
+    <string name="set_server_IP">https://mbank.bhausahebsahakaribank.com:4389  </string>  <!--- UAT =====>-->
+</resources>

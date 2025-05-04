@@ -1,0 +1,102 @@
+<resources>
+
+    <style name="AlertDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+    <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+    </style>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppThemeBlue" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryBlue</item> <!--actionbar-->
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkBlue</item>
+        <item name="colorAccent">@color/colorPrimaryDarkBlue</item>
+        <item name="textColorAccent">@color/colorAccentBlue</item>
+        <item name="borderGrey">@color/colorGrey</item>
+        <item name="textColorPrimary">@color/colorPrimaryBlue</item>
+        <item name="dropArrow">@drawable/spinnerarrow</item>
+        <item name="textColorPrimaryDark">@color/colorPrimaryDarkBlue</item>
+        <item name="colorGreen">@color/black</item>
+        <item name="colorGreenFent">@color/black</item>
+        <item name="textColour">@color/black</item>
+        <item name="gradientColourDark">@color/colorGradientDarkBlue</item>
+        <item name="gradientColour">@color/colorGradientBlue</item>
+
+    </style>
+
+    <style name="Theme" parent="Theme.AppCompat.Light.Dialog.Alert"></style>
+
+    <style name="NoActionBarTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+    </style>
+
+    <style name="NoActionBarThemeBlue" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryBlue</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkBlue</item>
+        <item name="colorAccent">@color/colorPrimaryDarkBlue</item><!-- materialtextfield-->
+        <item name="lockGradient">@drawable/gradient_bg_blue</item>
+        <item name="textColorAccent">@color/colorAccentBlue</item>
+        <item name="textColorPrimary">@color/colorPrimaryBlue</item>
+        <item name="textColorPrimaryDark">@color/colorPrimaryDarkBlue</item>
+        <item name="borderGrey">@color/colorGrey</item>
+        <item name="dropArrow">@drawable/spinnerarrow</item>
+        <item name="colorGreen">@color/black</item>
+        <item name="colorGreenFent">@color/black</item>
+        <item name="splashScreen">@drawable/splash_image_blue</item>
+        <item name="textColour">@color/colorPrimaryBlue</item>
+        <!--        <item name="buttonBackground">?attr/textColorPrimary</item>-->
+    </style>
+
+    <style name="CustomDialogTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="customDialogue" parent="Theme.AppCompat.Light.Dialog.MinWidth">
+        <item name="android:typeface">serif</item>
+        <item name="android:windowAnimationStyle">@style/DialogTheme</item>
+    </style>
+
+    <style name="DialogTheme">
+        <item name="android:windowEnterAnimation">@anim/slide_left</item>
+        <item name="android:windowExitAnimation">@anim/slide_right</item>
+    </style>
+
+    <style name="dialogTheme">
+        <item name="android:windowEnterAnimation">@anim/slide_up</item>
+        <item name="android:windowExitAnimation">@anim/slide_bottom</item>
+    </style>
+
+    <style name="HeaderTitleStyle" parent="@android:style/TextAppearance">
+        <item name="android:textColor">#111111</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+
+
+    <style name="FullScreenDialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowCloseOnTouchOutside">false</item>
+    </style>
+
+    <style name="Theme.MyDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/colorPrimaryDarkBlue</item>
+        <item name="android:textColorPrimary">@color/black</item>
+        <item name="android:background">@android:color/transparent</item>
+
+    </style>
+
+</resources>

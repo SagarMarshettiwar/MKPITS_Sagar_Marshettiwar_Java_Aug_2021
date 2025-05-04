@@ -1,0 +1,5 @@
+<resources>
+    <string name="set_server_IP">https://shriveershaivbank.com:9094</string>  <!--- LIVE =====>-->
+<!--    <string name="set_server_IP">https://59.95.101.93:8079</string>//=====public==-->
+
+</resources>

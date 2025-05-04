@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/searchbillerCoordinatorLayoutId"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:filterTouchesWhenObscured="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/bbps_custom_bar" />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/LLparentId"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="10dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvserchbiller"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/card_background_selector"
+                card_view:cardCornerRadius="8dp"
+                android:elevation="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:id="@+id/ll_fav"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:layout_weight="0.2"
+                            android:layout_marginTop="5dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Favorites"
+                                android:textSize="@dimen/activity_vertical_margin"
+                                android:typeface="serif" />
+                            <Spinner
+                                android:id="@+id/sp_favorites"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/spinner_border"
+                                android:padding="10dp" />
+                        </LinearLayout>
+                            <ImageView
+                                android:id="@+id/iv_removefav"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:src="@drawable/listremove"
+                                android:layout_gravity="bottom"
+                                android:layout_marginBottom="6dp"
+                                android:layout_weight="1"
+                                android:typeface="serif" />
+                    </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tv_coverage"
+                        android:textSize="@dimen/activity_vertical_margin"
+                        android:typeface="serif" />
+                    <Spinner
+                         android:id="@+id/sp_coverage"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:background="@drawable/spinner_border"
+                         android:padding="10dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_biller_category"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tv_biller_category"
+                        android:textSize="@dimen/activity_vertical_margin"
+                        android:typeface="serif" />
+                    <Spinner
+                        android:id="@+id/sp_categories"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/spinner_border"
+                        android:padding="10dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_biller_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tv_biller_name"
+                        android:textSize="@dimen/activity_vertical_margin"
+                        android:typeface="serif" />
+                    <TextView
+                        android:id="@+id/txt_biller_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Select Biller Name"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/activity_vertical_margin"
+                        android:background="@drawable/spinner_border"
+                        android:padding="10dp" />
+                </LinearLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/ll_cust_param1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:padding="10dp">
+
+                        <EditText
+                            android:id="@+id/et_cust_param1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/tv_consumer_no"
+                            android:maxLines="1"
+                            android:padding="7dp"
+                            android:inputType="text"
+                            android:singleLine="true"
+                            android:typeface="serif" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/ll_cust_param2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:padding="10dp">
+
+                        <EditText
+                            android:id="@+id/et_cust_param2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="cust_param2"
+                            android:maxLines="1"
+                            android:padding="7dp"
+                            android:singleLine="true"
+                            android:typeface="serif" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/ll_cust_param3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:padding="10dp">
+
+                        <EditText
+                            android:id="@+id/et_cust_param3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="cust_param3"
+                            android:maxLines="1"
+                            android:padding="7dp"
+                            android:singleLine="true"
+                            android:typeface="serif" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/ll_cust_param4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:padding="10dp">
+
+                        <EditText
+                            android:id="@+id/et_cust_param4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="cust_param4"
+                            android:maxLines="1"
+                            android:padding="7dp"
+                            android:singleLine="true"
+                            android:typeface="serif" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/ll_cust_param5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:padding="10dp">
+
+                        <EditText
+                            android:id="@+id/et_cust_param5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="cust_param5"
+                            android:maxLines="1"
+                            android:padding="7dp"
+                            android:singleLine="true"
+                            android:typeface="serif" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <CheckBox
+                        android:id="@+id/ck_Addtofav"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Add To favorites">
+                    </CheckBox>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/ll_nickname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:padding="10dp">
+
+                        <EditText
+                            android:id="@+id/et_nickname"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Enter Nickname"
+                            android:maxLines="1"
+                            android:padding="7dp"
+                            android:singleLine="true"
+                            android:typeface="serif" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <Button
+                android:id="@+id/btn_search"
+                style="?android:textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="20dp"
+                android:text="Search"
+                android:background="?attr/textColorPrimary"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/text_14sp"
+                android:layout_gravity="center_horizontal"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:typeface="serif" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

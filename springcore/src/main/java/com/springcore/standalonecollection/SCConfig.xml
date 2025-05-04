@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:context="http://www.springframework.org/schema/context"
+ xmlns:p="http://www.springframework.org/schema/p"
+ xmlns:util="http://www.springframework.org/schema/util"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ https://www.springframework.org/schema/beans/spring-beans.xsd
+ http://www.springframework.org/schema/context 
+ http://www.springframework.org/schema/context/spring-context.xsd
+ http://www.springframework.org/schema/util 
+ http://www.springframework.org/schema/util/spring-util.xsd">
+ 
+ <util:list list-class="java.util.LinkedList" id="linklist">
+ 	<value>aman</value>
+ 	<value>sagar</value>
+ 	<value>prem</value>
+ 	<value>amit</value>
+ 	<value>paras</value>
+ </util:list>
+ 
+ <util:map map-class="java.util.HashMap" id="hashmap">
+ 	<entry key="java" value="2 month"/>
+ 	<entry key="c" value="2 month"/>
+ 	<entry key="c++" value="3 month"/>
+ 	<entry key=".net" value="4 month"/>
+ </util:map>
+ 
+ <util:properties id="prop">
+		<prop key="Fname">Sagar</prop>
+		<prop key="Lname">Marshettiwar</prop>
+ </util:properties>
+ 
+ 
+ 
+ 
+<bean class="com.springcore.standalonecollection.Person" name="p1">
+	<!-- <property name="friends">
+		<ref bean="linklist"/>
+	</property> -->
+	<property name="friends" ref="linklist"/>
+	<property name="feestructor" ref="hashmap"/>
+	<property name="property" ref="prop"/>
+</bean>
+</beans>

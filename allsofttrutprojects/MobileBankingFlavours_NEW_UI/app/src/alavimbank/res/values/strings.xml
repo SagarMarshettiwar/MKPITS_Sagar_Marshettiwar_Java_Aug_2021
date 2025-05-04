@@ -1,0 +1,4 @@
+<resources>
+<!--    <string name="set_server_IP">https://115.124.125.225:7878</string>  &lt;!&ndash;- UAT =====>&ndash;&gt;-->
+    <string name="set_server_IP">https://mbank.alavibank.com</string>  <!--- LIVE =====>-->
+</resources>

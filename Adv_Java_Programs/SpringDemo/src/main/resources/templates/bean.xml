@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+
+    <!--<bean id="Emp" class="com.example.springdemo.Employee">
+        <property name="id" value="1999"></property>            &lt;!&ndash; SETTER Injection&ndash;&gt;
+        <property name="name" value="Sagar"></property>
+    </bean>
+    <bean id="Aob" class="com.example.springdemo.Account">
+        <property name="eob" ref="Emp"></property>
+    </bean>
+
+
+    <bean id="Emp1" class="com.example.springdemo.Employee1">
+         <constructor-arg index="0" value="11"/>                  &lt;!&ndash; CONSTRUCTOR Injection&ndash;&gt;
+         <constructor-arg index="1" value="Sagar"/>
+    </bean>
+    <bean id="Aob1" class="com.example.springdemo.Account1">
+        <property name="eob1" ref="Emp1"></property>
+    </bean>-->
+
+
+
+    <bean id="Emp2" class="com.example.springdemo.Employee2">
+        <constructor-arg index="0" value="24"/>                  <!-- AutoWiring-->
+        <constructor-arg index="1" value="Sagar"/>
+    </bean>
+    <bean id="Aob2" autowire="byName" class="com.example.springdemo.Account2">
+        
+    </bean>
+</beans>

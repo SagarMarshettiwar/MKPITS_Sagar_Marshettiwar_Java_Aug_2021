@@ -1,0 +1,4 @@
+<resources>
+    <!--<string name="set_server_IP">https://mbank.cdccbank.co.in:9755</string>  &lt;!&ndash;- UAT =====>&ndash;&gt;-->
+    <string name="set_server_IP">https://117.222.37.55:3636</string>  <!--- UAT =====>-->
+</resources>

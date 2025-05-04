@@ -1,0 +1,3 @@
+<resources>
+    <string name="set_server_IP">https://bantrabank.in:8091</string>  <!--- UAT =====>-->
+</resources>

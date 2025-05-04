@@ -1,0 +1,4 @@
+<resources>
+    <!--<string name="set_server_IP">https://115.124.105.21:30202 </string>  &lt;!&ndash;- UAT =====>&ndash;&gt;-->
+    <string name="set_server_IP">https://mobileapp.amarnathbank.com:30202 </string>  <!--- UAT =====>-->
+</resources>

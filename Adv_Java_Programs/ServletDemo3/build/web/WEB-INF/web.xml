@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>Test1</servlet-name>
+        <servlet-class>com.demo1.Test1</servlet-class>
+        <init-param>
+            <param-name>num1</param-name>
+            <param-value>25</param-value>
+        </init-param>
+        <init-param>
+            <param-name>num2</param-name>
+            <param-value>25</param-value>
+        </init-param>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Test1</servlet-name>
+        <url-pattern>/Test1</url-pattern>
+    </servlet-mapping>
+    <context-param>
+        <param-name>Animal</param-name>
+        <param-value>Tiger</param-value>
+    </context-param>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>

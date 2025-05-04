@@ -1,0 +1,5 @@
+<resources>
+
+ <!--    <string name="set_server_IP">https://serv.gautambank.in:7071</string>  &lt;!&ndash;- LIVE =====>&ndash;&gt;-->
+    <string name="set_server_IP">https://serv.gautambank.in:7072</string>  <!--- UAT =====>-->
+</resources>

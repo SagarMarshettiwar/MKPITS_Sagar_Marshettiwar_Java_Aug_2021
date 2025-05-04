@@ -1,0 +1,4 @@
+<resources>
+        <!--<string name="set_server_IP">https://fundtransfer.vardhamansahakari.org:8024</string>  &lt;!&ndash; //====VNSPM=====&ndash;&gt;-->
+        <string name="set_server_IP">https://36.255.252.172:8024</string>  <!-- //====VNSPM LIVE=====-->
+</resources>

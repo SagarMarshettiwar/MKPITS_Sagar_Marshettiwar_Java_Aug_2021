@@ -1,0 +1,20 @@
+{
+  "version": 3,
+  "artifactType": {
+    "type": "APK",
+    "kind": "Directory"
+  },
+  "applicationId": "com.trustbank.shriveerseva",
+  "variantName": "veersevaRelease",
+  "elements": [
+    {
+      "type": "SINGLE",
+      "filters": [],
+      "attributes": [],
+      "versionCode": 5,
+      "versionName": "1.0.4",
+      "outputFile": "app-veerseva-release.apk"
+    }
+  ],
+  "elementType": "File"
+}

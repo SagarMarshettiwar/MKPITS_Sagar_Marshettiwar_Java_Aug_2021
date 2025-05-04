@@ -1,0 +1,4 @@
+<resources>
+    <!--    <string name="set_server_IP">https://mbanking.bucbb.org.in:4443</string>  &lt;!&ndash;- UAT =====>&ndash;&gt;-->
+    <string name="set_server_IP">https://mbanking.bucbb.org.in:4445</string>  <!--- LIVE =====>-->
+</resources>

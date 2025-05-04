@@ -1,0 +1,4 @@
+<resources>
+       <!-- <string name="set_server_IP">https://61.2.227.136:5502</string>  &lt;!&ndash;- UAT =====>&ndash;&gt;-->
+    <string name="set_server_IP">https://ashirwadmahilabank.com:5502</string>  <!--- UAT =====>-->
+</resources>
